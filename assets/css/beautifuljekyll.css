@@ -639,7 +639,7 @@ footer .footer-text-links {
   background-color: #0099CC;
   color: #FFF;
   margin: 5rem 0 1.25rem;
-  padding: 4rem;
+  padding: 4rem 0;
 }
 .intro-header.big-img {
   background: no-repeat center center;
@@ -669,6 +669,27 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   -webkit-transition: opacity 1s linear;
   -moz-transition: opacity 1s linear;
   transition: opacity 1s linear;
+}
+.intro-header .home-heading {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.intro-header .home-heading p {
+  font-size: 1.5rem;
+  margin: 0.875rem 0;
+}
+.intro-header .home-heading .download {
+  margin: 2rem 0;
+}
+.intro-header .home-heading .download > a img {
+  margin-bottom: 1rem;
+}
+.intro-header .home-heading .download .app-links {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .intro-header .page-heading {
   text-align: center;
@@ -721,6 +742,11 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   right: 0;
   bottom: 0;
   display: none;
+}
+@media (min-width: 768px) {
+  .intro-header .home-heading .download .app-links {
+    flex-direction: row;
+  }
 }
 @media (min-width: 1200px) {
   {% comment %} .intro-header {
