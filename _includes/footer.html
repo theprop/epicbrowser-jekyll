@@ -10,20 +10,14 @@
           {% endfor %}
         </div>
       {% endif %}
+      <ul class="list-inline text-center footer-text-links">
+        {%- for link in site.footer-links -%}
+          <li class="list-inline-item">
+            <a href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
       <p class="copyright text-muted">
-      {% if site.author %}
-        {{ site.author }}
-        &nbsp;&bull;&nbsp;
-      {% endif %}
-      {{ site.time | date: '%Y' }}
-
-      {% if site.url-pretty %}
-        &nbsp;&bull;&nbsp;
-        <span class="author-site">
-          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '' | absolute_url }}{% endif %}">{{ site.url-pretty }}</a>
-        </span>
-      {% endif %}
-
       {% if site.matomo %}
         {% if site.matomo.opt-out %}
           &nbsp;&bull;&nbsp;
@@ -35,12 +29,11 @@
         &nbsp;&bull;&nbsp;
         <a title="Edit this page on GitHub" href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}" class="text_muted">Edit page</a>
        {% endif%}
-
       </p>
-      {% unless site.remove-ads %}<p class="theme-by text-muted">
-        Powered by
-        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
-      </p>{% endunless %}
+      <p class="copyright text-muted">
+        &copy; {{ site.time | date: '%Y' }}
+        <a class="text-muted" href="https://hiddenreflex.com" target="_blank" rel="noreferrer">Hidden Reflex</a>
+      </p>
       </div>
     </div>
   </div>
