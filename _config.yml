@@ -61,7 +61,7 @@ title-img: /assets/img/mainlogo.png
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "alok@hiddenreflex.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  rss: false  # set to "false" if you don't want to show an RSS link at the bottom
   facebook: EpicBrowser
   twitter: EpicBrowser
   # youtube: c/daattali
@@ -91,7 +91,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more.
+rss-description: # Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more.
 
 ###########################
 # --- General options --- #
