@@ -15,18 +15,21 @@
       {%- for link in site.navbar-links -%}
         {%- if link[1].first %}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link[0] }}</a>
+            {% assign item_name = link[0] %}
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ site.data[site.active_lang].nav[item_name].label }}</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               {%- for childlink in link[1] -%}
                 {%- for linkparts in childlink %}
-                  <a class="dropdown-item" href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
+                  {% assign subitem_name = linkparts[0] %}
+                  <a class="dropdown-item" href="{{ linkparts[1] | relative_url }}">{{ site.data[site.active_lang].nav[item_name][subitem_name] }}</a>
                 {%- endfor -%}
               {%- endfor %}
             </div>
           </li>
         {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+            {% assign item_name = link[0] %}
+            <a class="nav-link" href="{{ link[1] | relative_url }}">{{ site.data[site.active_lang].nav[item_name] }}</a>
           </li>
         {%- endif -%}
       {%- endfor -%}
@@ -36,6 +39,34 @@
             <span id="nav-search-icon" class="fa fa-search"></span>
             <span id="nav-search-text">Search</span>
           </a>
+        </li>
+      {%- endif -%}
+      {%- if site.languages.size > 1 -%}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ site.active_lang }}</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            {%- for lang in site.languages -%}
+                {%- if lang == site.active_lang -%}
+                  <a class="dropdown-item disabled" href="#">{{ lang }} <span class="sr-only">{{ site.data.lang[lang] }}</span></a>
+                {%- else -%}
+                  {%- if lang == site.default_lang -%}
+                    <a
+                      class="dropdown-item{% if site.active_lang == site.default_lang %} disabled"aria-current="true" aria-disabled="true{% endif %}"
+                      href="{% if site.active_lang != site.default_lang %}{% if page.path contains "404" and page.path contains ".html" %}../{% else %}{{ page.url }}{% endif %}{% else %}#{% endif %}"
+                    >
+                      {{ lang }} <span class="sr-only">{{ site.data.lang[lang] }}</span>
+                    </a>
+                  {%- else -%}
+                    <a
+                      class="dropdown-item{% if site.active_lang == lang %} disabled"aria-current="true" aria-disabled="true{% endif %}"
+                      href="{% if site.active_lang != lang %}/{{ lang }}{% if page.path contains "404" and page.path contains ".html" %}{% else %}{{ page.url }}{% endif %}{% else %}#{% endif %}"
+                    >
+                      {{ lang }} <span class="sr-only">{{ site.data.lang[lang] }}</span>
+                    </a>
+                  {%- endif -%}
+                {%- endif -%}
+            {%- endfor -%}
+          </div>
         </li>
       {%- endif -%}
     </ul>

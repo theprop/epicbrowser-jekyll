@@ -12,20 +12,22 @@
 # Name of website
 title: Epic Browser
 
-# Your name to show in the footer
-# author: Some Person
-
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  Key Features: "keyfeatures"
-  Blog: "https://blog.epicbrowser.com/"
-  Forum: "http://forum.epicbrowser.com/"
-  FAQ: "faq"
-  About Us: "about-us"
-  Contact Us: "contact-us"
+  key-features: "key-features"
+  blog: "https://blog.epicbrowser.com/"
+  forum: "http://forum.epicbrowser.com/"
+  faq: "faq"
+  about-us: "about-us"
+  contact-us: "contact-us"
+
+  # ADDING A DROPDOWN MENU ITEM (example code below)
+  # drop:
+  #   - first: "first"
+  #   - second: "second"
 
 ###############################################
 # --- List of links in the footer --- #
@@ -61,7 +63,7 @@ title-img: /assets/img/mainlogo.png
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "alok@hiddenreflex.com"
-  rss: false  # set to "false" if you don't want to show an RSS link at the bottom
+  rss: false  # set to "true" if you want to show an RSS link at the bottom
   facebook: EpicBrowser
   twitter: EpicBrowser
   # youtube: c/daattali
@@ -103,10 +105,6 @@ share-links-active:
   facebook: true
   linkedin: false
   vk: false
-
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "EpicBrowser.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -257,12 +255,18 @@ date_format: "%B %-d, %Y"
 # Facebook App ID
 #fb_app_id: ""
 
+# Polyglot settings (plugin repository and documentation: https://github.com/untra/polyglot)
+languages           : ["en", "fr"] # ISO 639-1 languages codes of languages to be supported on the website
+default_lang        : "en" # default fallback language in which to display website content
+exclude_from_localization: ["assets"] # root-level files and folders to exclude from localisation
+parallel_localization: true # whether to run language processing in parallel or serial (when in doubt, just default to "true" as per the plugin's documentation) 
+
 #################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Asia/Kolkata"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/

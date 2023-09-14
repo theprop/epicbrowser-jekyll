@@ -1,0 +1,16 @@
+lang:
+  en: English
+  fr: French
+nav:
+  key-features: "Key Features"
+  blog: "Blog"
+  forum: "Forum"
+  faq: "FAQ"
+  about-us: "About Us"
+  contact-us: "Contact Us"
+
+  # ADDING LABELS FOR A DROPDOWN MENU ITEM
+  # drop:
+    # label: label of the dropdown menu (string)
+    # first: label of first dropdown item (string; key name must correspond with permalink provided at _config.yml)
+    # second: label of second dropdown item (string; key name must correspond with permalink provided at _config.yml)
