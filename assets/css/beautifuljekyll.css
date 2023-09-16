@@ -770,6 +770,43 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   }
 }
 
+#asSeenIn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#asSeenIn .carousel-indicators {
+  position: static;
+  margin: unset;
+  padding: unset;
+}
+
+#asSeenIn > h2, #asSeenIn > ol {
+  flex-basis: 20%;
+}
+
+#asSeenIn > h2 {
+  margin: unset;
+}
+
+#asSeenIn > div {
+  flex-basis: 60%;
+}
+
+#asSeenIn .carousel-indicators li {
+  background-color: #000;
+}
+@media (min-width: 992px) {
+  #asSeenIn {
+    flex-direction: row;
+  }
+}
+
 .header-section.has-img .no-img {
   margin-top: 0;
   background-color: #FCFCFC;
