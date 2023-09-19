@@ -412,6 +412,7 @@ main.home-page .presentation-1 .card-container .card h3 {
   color: #0099CC;
   font-weight: 700;
   margin: unset;
+  margin-bottom: 1rem;
 }
 
 main.home-page .presentation-2 {
