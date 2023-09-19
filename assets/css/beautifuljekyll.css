@@ -376,25 +376,23 @@ img {
 }
 
 /* --- Home page --- */
-main.home-page p {
-  margin: unset;
-}
 
-main.home-page .card {
-  width: 18rem;
-}
-
-main.home-page .presentation-1 {
+main.home-page {
   background-color: #fff;
   padding: 2rem;
 }
 
-main.home-page .presentation-1 h2 {
+main.home-page h2 {
   color: #404040;
-  margin: 1.25rem 0;
+  margin: unset;
+  margin-bottom: 2rem;
 }
 
-main.home-page .presentation-1 .card-container {
+main.home-page p {
+  margin: unset;
+}
+
+main.home-page .card-container {
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -403,51 +401,37 @@ main.home-page .presentation-1 .card-container {
 }
 
 @media (min-width: 768px) {
-  main.home-page .presentation-1 .card-container {
+  main.home-page .card-container {
     flex-direction: row;
   }
 }
 
-main.home-page .presentation-1 .card-container .card h3 {
+main.home-page .card-container .card {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  main.home-page .card-container .card {
+    width: 18rem;
+  }
+  main.home-page .card-container .card.big {
+    width: 100%;
+    max-width: 40rem;
+  }
+}
+
+main.home-page .card-container .card h3 {
   color: #0099CC;
   font-weight: 700;
   margin: unset;
   margin-bottom: 1rem;
 }
 
-main.home-page .presentation-2 {
-  background-color: #0099CC;
-  color: #fff;
-  padding: 2rem;
-}
-
-main.home-page .presentation-2 h2 {
-  color: #F5F5F5;
-  margin: 1.25rem 0;
-}
-
-main.home-page .presentation-2 .list-container::after {
-  display: block;
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.35;
-  background-image: url("/assets/img/presentation/home_13.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  filter: blur(0.5px);
-}
-
-main.home-page .presentation-2 .list-container p {
-  font-size: 1.5rem;
+main.home-page .card-container .card .list-container p {
   margin-bottom: 1rem;
 }
 
-main.home-page .presentation-2 .list-container ol {
+main.home-page .card-container .card .list-container ol {
   position: relative;
   list-style-type: circle;
   padding-inline-start: 1.5rem;
@@ -474,11 +458,13 @@ footer p.text-muted {
 
 footer a {
   color: {{ site.footer-link-col | default: "#404040" }};
+  transition: color 0.15s ease-in-out;
 }
 
 footer a:hover,
 footer a:focus {
   color: {{ site.footer-hover-col | default: "#0085A1" }};
+  transition: color 0.15s ease-in-out;
 }
 
 footer .list-inline {
@@ -486,24 +472,39 @@ footer .list-inline {
   padding: 0;
   margin-bottom: 1.875rem;
 }
+
 footer .copyright {
   {%- comment -%} font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; {%- endcomment -%}
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
 }
+
 footer .theme-by {
   text-align: center;
   margin: 0.625rem 0 0;
 }
+
 footer .footer-custom-content {
   text-align: center;
   margin-bottom: 0.9375rem;
   {%- comment -%} font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; {%- endcomment -%}
 }
+
 footer .footer-text-links {
   {%- comment -%} font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; {%- endcomment -%}
   font-size: 0.875rem;
+}
+
+footer .footer-text-links .list-inline-item:not(:last-child)::after {
+  content: " \00A0 \2022";
+}
+
+footer .footer-text-links .list-inline-item a {
+  display: inline-block;
+  margin: 5px auto;
+  padding: 0;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
