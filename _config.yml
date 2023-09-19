@@ -17,26 +17,26 @@ title: Epic Browser
 ###############################################
 
 navbar-links:
-  key-features: "key-features"
-  blog: "https://blog.epicbrowser.com/"
-  forum: "http://forum.epicbrowser.com/"
-  faq: "faq"
-  about-us: "about-us"
-  contact-us: "contact-us"
+    key-features: "key-features"
+    blog: "https://blog.epicbrowser.com/"
+    forum: "http://forum.epicbrowser.com/"
+    faq: "faq"
+    about-us: "about-us"
+    contact-us: "contact-us"
 
-  # ADDING A DROPDOWN MENU ITEM (example code below)
-  # drop:
-  #   - first: "first"
-  #   - second: "second"
+    # ADDING A DROPDOWN MENU ITEM (example code below)
+    # drop:
+    #   - first: "first"
+    #   - second: "second"
 
 ###############################################
 # --- List of links in the footer --- #
 ###############################################
 
 footer-links:
-  Terms of Use: "tou"
-  Privacy Policy: "privacy-policy"
-  Custom Browser Development: "custom-web-browser"
+    Terms of Use: "tou"
+    Privacy Policy: "privacy-policy"
+    Custom Browser Development: "custom-web-browser"
 
 ################
 # --- Logo --- #
@@ -53,7 +53,6 @@ round-avatar: true
 # then specify the following parameter
 title-img: /assets/img/mainlogo.png
 
-
 #####################################
 # --- Footer social media links --- #
 #####################################
@@ -61,39 +60,40 @@ title-img: /assets/img/mainlogo.png
 # Select the social network links that you want to show in the footer.
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
+# Unused links are ordered below in alphabetical order for ease of reference; they will appear on the site in the exact order you set them here.
 social-network-links:
-  email: "alok@hiddenreflex.com"
-  rss: false  # set to "true" if you want to show an RSS link at the bottom
-  facebook: EpicBrowser
-  twitter: EpicBrowser
-  # youtube: c/daattali
-  # github: daattali
-  # patreon: DeanAttali
-#  medium: yourname
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: "invite_code" or "users/userid" or "invite/invite_code" 
-#  kaggle: yourname
-#  hackerrank: yourname
-#  gitlab: yourname
+    rss: false # set to "true" if you want to show an RSS link at the bottom
+    facebook: EpicBrowser
+    twitter: EpicBrowser
+    email: "alok@hiddenreflex.com"
+    # calendly: yourname
+    # discord: "invite_code" or "users/userid" or "invite/invite_code"
+    # github: yourname
+    # gitlab: yourname
+    # google-scholar: your google scholar
+    # hackerrank: yourname
+    # instagram: yourname
+    # kaggle: yourname
+    # linkedin: yourname
+    # mastodon: instance.url/@username
+    # medium: yourname
+    # ORCID: your ORCID ID
+    # patreon: yourname
+    # reddit: yourname
+    # snapchat: deanat78
+    # spotify: yourname
+    # stackoverflow: "id/username"
+    # steam: yourname
+    # telegram: yourname
+    # telephone: +12345678900
+    # twitch: yourname
+    # xing: yourname
+    # yelp: yourname
+    # youtube: @yourname
 
-# If you want your website to generate an RSS feed, provide a description
+# If you want your website to generate an RSS feed, uncomment "rss-description" below
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: # Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more.
+# rss-description: Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more.
 
 ###########################
 # --- General options --- #
@@ -101,10 +101,10 @@ rss-description: # Epic is a private, secure web browser that blocks ads, tracke
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: false
-  vk: false
+    twitter: true
+    facebook: true
+    linkedin: false
+    vk: false
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -216,23 +216,23 @@ footer-hover-col: "#0099CC"
 #  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 # To use Staticman comments, uncomment the following section. You may leave the reCaptcha
-# section commented if you aren't using reCaptcha for spam protection. 
-# Using Staticman requires advanced knowledge, please consult 
-# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further 
-# instructions. For any support with staticman please direct questions to staticman and 
+# section commented if you aren't using reCaptcha for spam protection.
+# Using Staticman requires advanced knowledge, please consult
+# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further
+# instructions. For any support with staticman please direct questions to staticman and
 # not to BeautifulJekyll.
 #staticman:
 #  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
 #  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
-#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
+#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well)
 #    siteKey  : # You need to apply for a site key on Google
 #    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
 
 # To use giscus comments:
-# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository, 
+# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository,
 # (2) Install the giscus app in your repository (details at https://giscus.app),
-# (3) Fill in *all* the parameters below 
+# (3) Fill in *all* the parameters below
 # See more details about giscus and each of the following parameters at https://giscus.app
 #giscus:
 #  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
@@ -256,10 +256,10 @@ date_format: "%B %-d, %Y"
 #fb_app_id: ""
 
 # Polyglot settings (plugin repository and documentation: https://github.com/untra/polyglot)
-languages           : ["en", "fr"] # ISO 639-1 language codes of languages to be supported on the website
-default_lang        : "en" # default fallback language in which to display website content
+languages: ["en", "fr"] # ISO 639-1 language codes of languages to be supported on the website
+default_lang: "en" # default fallback language in which to display website content
 exclude_from_localization: ["assets"] # root-level files and folders to exclude from localisation
-parallel_localization: true # whether to run language processing in parallel or serial (when in doubt, just default to "true" as per the plugin's documentation) 
+parallel_localization: true # whether to run language processing in parallel or serial (when in doubt, just default to "true" as per the plugin's documentation)
 
 #################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #
@@ -273,40 +273,38 @@ permalink: /:year-:month-:day-:title/
 paginate: 5
 
 kramdown:
-  input: GFM
+    input: GFM
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
-      path: "" # any file that's not a post will be a "page" layout by default
-    values:
-      layout: "page"
+    - scope:
+          path: ""
+          type: "posts"
+      values:
+          layout: "post"
+          comments: true # add comments to all blog posts
+          social-share: true # add social media sharing buttons to all blog posts
+    - scope:
+          path: "" # any file that's not a post will be a "page" layout by default
+      values:
+          layout: "page"
 
 # Exclude these files from production site
 exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - screenshot.png
-  - docs/
+    - CHANGELOG.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - screenshot.png
+    - docs/
 
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-polyglot
-
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-polyglot
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
+# Customised for Epic Privacy Browser by Davy Kamanzi - https://davyk17.github.io/
