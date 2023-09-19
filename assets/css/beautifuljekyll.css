@@ -15,7 +15,7 @@ body {
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
-  background-color: {{ site.page-col | default: "#FFFFFF" }};
+  background-color: {{ site.page-col | default: "#FFF" }};
   {% if site.page-img %}
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
@@ -382,7 +382,7 @@ main {
 }
 
 main.home-page {
-  background-color: #fff;
+  background-color: #F5F5F5;
   padding: 2rem;
 }
 
@@ -859,7 +859,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 
 #asSeenIn {
   display: flex;
-  background-color: #fff;
+  background-color: #FFF;
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
@@ -1005,8 +1005,8 @@ table {
   padding: 0;
 }
 table tr {
-  border-top: 1px solid #cccccc;
-  background-color: #ffffff;
+  border-top: 1px solid #CCC;
+  background-color: #FFF;
   margin: 0;
   padding: 0;
 }
@@ -1015,13 +1015,13 @@ table tr:nth-child(2n) {
 }
 table tr th {
   font-weight: bold;
-  border: 1px solid #cccccc;
+  border: 1px solid #CCC;
   text-align: left;
   margin: 0;
   padding: 0.375rem 0.8125rem;
 }
 table tr td {
-  border: 1px solid #cccccc;
+  border: 1px solid #CCC;
   text-align: left;
   margin: 0;
   padding: 0.375rem 0.8125rem;
