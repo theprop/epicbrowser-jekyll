@@ -377,6 +377,10 @@ img {
 
 /* --- Home page --- */
 
+main {
+  padding: 1.5rem;
+}
+
 main.home-page {
   background-color: #fff;
   padding: 2rem;
@@ -1286,4 +1290,20 @@ pre {
   #nav-search-text {
     display: inline-block;
   }
+}
+
+/* --- Contacts --- */
+
+.contact-details {
+  margin-bottom: 2rem;
+}
+
+.contact-details h2 {
+  margin-top: unset;
+  margin-bottom: 1.25rem;
+}
+
+.contact-details p {
+  margin: unset;
+  margin-bottom: 0.675rem;
 }
