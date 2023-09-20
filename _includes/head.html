@@ -23,7 +23,7 @@
     {%- endif -%}
   {% endcapture %}
 
-  <title>{{ title }}</title>
+  <title>Epic Privacy Browser{% unless page.path == "index.html" %} - {{ title }}{% endunless %}</title>
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 
   {% if site.author %}
@@ -104,7 +104,7 @@
   {%- endcapture -%}
   {%- assign img=img | strip -%}
 
-  <meta property="og:title" content="{{ title }}">
+  <meta property="og:title" content='Epic Privacy Browser{% unless page.path == "index.html" %} - {{ title }}{% endunless %}'>
   <meta property="og:description" content="{{ description }}">
 
   {% if img != "" %}
@@ -131,7 +131,7 @@
   <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
   <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
 
-  <meta property="twitter:title" content="{{ title }}">
+  <meta property="twitter:title" content='Epic Privacy Browser{% unless page.path == "index.html" %} - {{ title }}{% endunless %}'>
   <meta property="twitter:description" content="{{ description }}">
 
   {% if img != "" %}
@@ -141,7 +141,7 @@
   {% include matomo.html %}
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
+  <link rel="stylesheet" href='{{ "/assets/css/staticman.css" | relative_url }}'>
   {% endif %}
 
   {% if page.head-extra %}
