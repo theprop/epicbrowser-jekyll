@@ -1336,6 +1336,7 @@ pre {
   margin-bottom: 1.25rem;
 }
 
+.content-section h2, .content-section h3, .content-section h4, .content-section h5, .content-section h6,
 .content-box h2, .content-box h3, .content-box h4, .content-box h5, .content-box h6 {
   margin-top: unset;
   margin-bottom: 1.25rem;
@@ -1359,4 +1360,8 @@ iframe.yt-embed {
     width: 560px;
     height: 315px;
   }
+}
+
+ol.tou li {
+  margin: 1.25rem 0.625rem;
 }
