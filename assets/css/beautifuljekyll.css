@@ -747,6 +747,13 @@ footer .footer-text-links .list-inline-item a {
   margin: 3.25rem 0 0;
   padding: 4rem 0;
 }
+
+@media (min-width: 1200px) {
+  .intro-header > div {
+    margin-top: 1.75rem;
+  }
+}
+
 .intro-header.big-img {
   background: no-repeat center center;
   -webkit-background-size: cover;
