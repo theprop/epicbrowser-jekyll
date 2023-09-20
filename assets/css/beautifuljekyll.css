@@ -377,6 +377,10 @@ img {
 
 /* --- Home page --- */
 
+main:not(.home-page) {
+  padding: 3.5rem;
+}
+
 main.home-page h2 {
   color: #404040;
   margin: unset;
@@ -740,11 +744,8 @@ footer .footer-text-links .list-inline-item a {
   position: relative;
   background-color: #0099CC;
   color: #FFF;
-  margin: 5rem 0 1.25rem;
-  padding: 4rem 0;
-}
-.intro-header.home-page {
   margin: 3.25rem 0 0;
+  padding: 4rem 0;
 }
 .intro-header.big-img {
   background: no-repeat center center;
@@ -1310,18 +1311,21 @@ pre {
   }
 }
 
-/* --- Contacts --- */
+/* --- General content --- */
 
-.contact-details {
+.content-box:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.contact-details h2 {
+.content-box h2, .content-box h3, .content-box h4, .content-box h5, .content-box h6 {
   margin-top: unset;
   margin-bottom: 1.25rem;
 }
 
-.contact-details p {
+.content-box p {
   margin: unset;
+}
+
+.content-box p:not(:last-child) {
   margin-bottom: 0.675rem;
 }
