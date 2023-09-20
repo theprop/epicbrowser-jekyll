@@ -1313,8 +1313,20 @@ pre {
 
 /* --- General content --- */
 
+.content-section:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
 .content-box:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+.content-section .header-container, .content-box .header-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1.25rem;
 }
 
 .content-box h2, .content-box h3, .content-box h4, .content-box h5, .content-box h6 {
@@ -1328,4 +1340,16 @@ pre {
 
 .content-box p:not(:last-child) {
   margin-bottom: 0.675rem;
+}
+
+iframe.yt-embed {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  iframe.yt-embed {
+    width: 560px;
+    height: 315px;
+  }
 }
