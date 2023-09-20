@@ -1,0 +1,12 @@
+---
+layout: page
+title: FAQ
+subtitle: Check out frequently asked questions from our users.
+---
+
+{%- for item in site.data.en.faq -%}
+    <div class="content-box">
+        <h2>{{ item.question }}</h2>
+        <p>{{ item.answer }}</p>
+    </div>
+{%- endfor -%}
