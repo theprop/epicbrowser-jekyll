@@ -522,10 +522,6 @@ footer .footer-text-links {
   font-size: 0.875rem;
 }
 
-footer .footer-text-links .list-inline-item:not(:last-child)::after {
-  content: " \00A0 \2022";
-}
-
 footer .footer-text-links .list-inline-item a {
   display: inline-block;
   margin: 5px auto;
@@ -1319,6 +1315,11 @@ pre {
 }
 
 /* --- General content --- */
+
+.list-inline.bullet .list-inline-item:not(:last-child)::after {
+  content: " \00A0 \2022";
+}
+
 
 .content-section:not(:last-child) {
   margin-bottom: 3rem;
