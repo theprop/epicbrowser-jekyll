@@ -1316,10 +1316,35 @@ pre {
 
 /* --- General content --- */
 
-.list-inline.bullet .list-inline-item:not(:last-child)::after {
-  content: " \00A0 \2022";
+.content-tabs {
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #40404099;
 }
 
+@media (min-width: 768px) {
+  .content-tabs {
+    justify-content: space-evenly;
+  }
+}
+
+.content-tabs .nav-link {
+  color: #404040;
+  padding: unset;
+  transition: color 0.15s ease-in-out;
+}
+
+.content-tabs .nav-link:hover {
+  color: #0099CC;
+  transition: color 0.15s ease-in-out;
+}
+
+.content-tabs .nav-link.active {
+  color: #0099CC;
+  background-color: unset;
+  font-weight: 700;
+}
 
 .content-section:not(:last-child) {
   margin-bottom: 3rem;
@@ -1331,13 +1356,23 @@ pre {
 
 .content-section .header-container, .content-box .header-container {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  flex-direction: column;
   justify-content: start;
   align-items: center;
   margin-bottom: 1.25rem;
 }
 
+@media (min-width: 992px) {
+  .content-section .header-container, .content-box .header-container {
+    gap: 0.5rem;
+    flex-direction: row;
+  }
+}
+
 .content-section .header-container.has-icon, .content-box .header-container.has-icon {
+  gap: 0.5rem;
+  flex-direction: row;
   margin-left: calc(-{{ page.icon_size | default: "40px" }} - 0.5rem - 1px);
 }
 
@@ -1355,6 +1390,27 @@ pre {
   margin-bottom: 0.675rem;
 }
 
+.blockquote-collection, .blockquote {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #0099CC99;
+  border-radius: 0.375rem;
+}
+
+.blockquote-collection blockquote {
+  margin: unset;
+}
+
+.blockquote-collection blockquote:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.blockquote-collection blockquote p, .blockquote p {
+  color: #606060;
+  font-style: normal;
+  font-weight: 700;
+}
+
 iframe.yt-embed {
   width: 100%;
   height: 100%;
@@ -1365,6 +1421,12 @@ iframe.yt-embed {
     width: 560px;
     height: 315px;
   }
+}
+
+/* --- Miscellaneous --- */
+
+.list-inline.bullet .list-inline-item:not(:last-child)::after {
+  content: " \00A0 \2022";
 }
 
 ol.tou li {
