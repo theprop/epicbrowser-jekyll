@@ -744,13 +744,13 @@ footer .footer-text-links .list-inline-item a {
   position: relative;
   background-color: #0099CC;
   color: #FFF;
-  margin: 3.25rem 0 0;
+  margin: 3.1875rem 0 0;
   padding: 4rem 0;
 }
 
 @media (min-width: 1200px) {
   .intro-header > div {
-    margin-top: 1.75rem;
+    margin-top: 1.8125rem;
   }
 }
 
