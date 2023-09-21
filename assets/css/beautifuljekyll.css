@@ -1336,6 +1336,10 @@ pre {
   margin-bottom: 1.25rem;
 }
 
+.content-section .header-container.has-icon, .content-box .header-container.has-icon {
+  margin-left: calc(-{{ page.icon_size | default: "40px" }} - 0.5rem - 1px);
+}
+
 .content-section h2, .content-section h3, .content-section h4, .content-section h5, .content-section h6,
 .content-box h2, .content-box h3, .content-box h4, .content-box h5, .content-box h6 {
   margin-top: unset;
