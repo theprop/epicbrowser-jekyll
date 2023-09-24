@@ -401,16 +401,6 @@ main.home-page .need-epic {
 
 main.home-page .innovation {
   background-color: #FFF;
-  background-image: url("/assets/img/presentation/home_13.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  main.home-page .innovation {
-    background-size: contain;
-  }
 }
 
 main.home-page .card-container {
