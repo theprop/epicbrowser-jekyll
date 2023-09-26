@@ -36,7 +36,9 @@ navbar-links:
 footer-links:
     Terms of Use: "tou"
     Privacy Policy: "privacy-policy"
-    Custom Browser Development: "custom-web-browser"
+    Custom Browser: "custom-browser"
+    Enterprise Browser: "enterprise-browser"
+    Sponsor Epic: "sponsor"
 
 ################
 # --- Logo --- #
