@@ -409,6 +409,17 @@ main.home-page .need-epic {
 
 main.home-page .innovation {
   background-color: #FFF;
+  background-image: url("/assets/img/presentation/stars-gold.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+  main.home-page .innovation {
+    background-attachment: scroll;
+  }
 }
 
 main.home-page .card-container {
@@ -426,6 +437,7 @@ main.home-page .card-container {
 
 main.home-page .card-container .card {
   width: 100%;
+  backdrop-filter: blur(0.025rem);
 }
 
 @media (min-width: 768px) {
