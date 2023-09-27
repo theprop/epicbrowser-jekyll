@@ -20,9 +20,9 @@ navbar-links:
     key-features: "key-features"
     blog: "https://blog.epicbrowser.com/"
     forum: "http://forum.epicbrowser.com/"
+    donate: "donate"
     faq: "faq"
-    about-us: "about-us"
-    contact-us: "contact-us"
+    contact: "contact-us"
 
     # ADDING A DROPDOWN MENU ITEM (example code below)
     # drop:
@@ -34,11 +34,12 @@ navbar-links:
 ###############################################
 
 footer-links:
-    Terms of Use: "tou"
-    Privacy Policy: "privacy-policy"
-    Custom Browser: "custom-browser"
-    Enterprise Browser: "enterprise-browser"
-    Sponsor Epic: "sponsor"
+    tou: "tou"
+    privacy-policy: "privacy-policy"
+    about: "about-us"
+    custom-browser: "custom-browser"
+    enterprise-browser: "enterprise-browser"
+    sponsor: "sponsor"
 
 ################
 # --- Logo --- #

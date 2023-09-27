@@ -1,7 +1,7 @@
 <footer>
   <div class="container-md beautiful-jekyll-footer">
     <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <div class="col-lg-10 offset-lg-1">
       {% include social-networks-links.html %}
       {% if page.footer-extra %}
         <div class="footer-custom-content">
@@ -12,8 +12,9 @@
       {% endif %}
       <ul class="list-inline bullet text-center footer-text-links">
         {%- for link in site.footer-links -%}
+        {%- assign item_name = link[0] -%}
           <li class="list-inline-item">
-            <a href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+            <a href="{{ link[1] | relative_url }}">{{ site.data[site.active_lang].footer[item_name] }}</a>
           </li>
         {%- endfor -%}
       </ul>
