@@ -12,6 +12,14 @@
 
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="navbar-nav ml-auto">
+      {%- if page.url == "/" -%}
+        <li class="nav-item download-button">
+          <a href="/thank-you">
+            <img src="/assets/img/epic_logo.png" width="24px" height="24px" />
+            <span>Download Epic</span>
+          </a>
+        </li>
+      {%- endif -%}
       {%- for link in site.navbar-links -%}
         {%- if link[1].first %}
           <li class="nav-item dropdown">
@@ -27,7 +35,8 @@
             </div>
           </li>
         {% else %}
-          <li class="nav-item">
+          {% assign url = link[1] | relative_url | append: "/" %}
+          <li class="nav-item{%- if url == page.url -%}{{ " active" }}{%- endif-%}">
             {% assign item_name = link[0] %}
             <a class="nav-link" href="{{ link[1] | relative_url }}">{{ site.data[site.active_lang].nav[item_name] }}</a>
           </li>

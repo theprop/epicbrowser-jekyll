@@ -188,6 +188,48 @@ strong.bolder {
   letter-spacing: 0.0625rem;
 }
 
+.navbar-custom .navbar-nav .nav-item.active .nav-link {
+  color: #0099CC;
+}
+
+.navbar-custom .navbar-nav .download-button {
+  display: inline-flex;
+  justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.navbar-custom .navbar-nav .download-button.show {
+  opacity: 1;
+}
+
+.navbar-custom .navbar-nav .download-button a {
+  display: flex;
+  gap: 0.5rem;
+  height: inherit;
+  background-color: #0099CC;
+  color: #FFF;
+  font-weight: 800;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: unset;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.navbar-custom .navbar-nav .download-button a:hover,
+.navbar-custom .navbar-nav .download-button a:focus {
+  background-color: #656767;
+  text-decoration: none;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
 .navbar-custom .navbar-nav .nav-link {
   line-height: 1.25rem;
   padding-top: 0.9375rem;
