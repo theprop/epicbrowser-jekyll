@@ -1513,3 +1513,8 @@ iframe.yt-embed {
 ol.tou li {
   margin: 1.25rem 0.625rem;
 }
+
+.monthly-support-form select {
+  width: 100%;
+  max-width: 400px;
+}
