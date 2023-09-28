@@ -343,6 +343,11 @@ button:focus {
   {% endunless %}
 }
 
+.navbar-custom .nav-item.dropdown .dropdown-menu.language-select .dropdown-item.active {
+  color: {{ site.navbar-hover-col | default: "#0085A1" }};
+  font-weight: 700;
+}
+
 @media (min-width: 1200px) {
   .navbar-custom .nav-item.dropdown .dropdown-menu {
     text-align: center;

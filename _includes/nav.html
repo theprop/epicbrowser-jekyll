@@ -51,15 +51,15 @@
       {%- if site.languages.size > 1 -%}
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ site.active_lang }}</a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu dropdown-menu-right language-select" aria-labelledby="navbarDropdown">
             {%- for lang in site.languages -%}
                 {%- if lang == site.active_lang -%}
-                  <a class="dropdown-item disabled" href="#">{{ lang }} <span class="sr-only">{{ site.data.lang[lang] }}</span></a>
+                  <a class="dropdown-item active disabled" href="#">{{ lang }} <span class="sr-only">{{ site.data.lang[lang] }}</span></a>
                 {%- else -%}
                   {%- if lang == site.default_lang -%}
                     <a
                       class="dropdown-item{% if site.active_lang == site.default_lang %} disabled"aria-current="true" aria-disabled="true{% endif %}"
-                      href="{% if site.active_lang != site.default_lang %}{% if page.path contains "404" and page.path contains ".html" %}../{% else %}{{ page.url }}{% endif %}{% else %}#{% endif %}"
+                      {% static_href %}href="{% if site.active_lang != site.default_lang %}{% if page.path contains "404" and page.path contains ".html" %}{% else %}{{ page.url }}{% endif %}{% else %}#{% endif %}"{% endstatic_href %}
                     >
                       {{ lang }} <span class="sr-only">{{ site.data.lang[lang] }}</span>
                     </a>
