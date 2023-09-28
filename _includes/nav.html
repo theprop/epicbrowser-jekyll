@@ -12,14 +12,12 @@
 
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="navbar-nav ml-auto">
-      {%- if page.url == "/" -%}
         <li class="nav-item download-button">
           <a href="/thank-you">
             <img src="/assets/img/epic_logo.png" width="24px" height="24px" />
             <span>Download Epic</span>
           </a>
         </li>
-      {%- endif -%}
       {%- for link in site.navbar-links -%}
         {%- if link[1].first %}
           <li class="nav-item dropdown">

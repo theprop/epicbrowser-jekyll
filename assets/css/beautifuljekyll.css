@@ -219,14 +219,14 @@ button:focus {
 .navbar-custom .navbar-nav .download-button {
   display: inline-flex;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
 }
 
-.navbar-custom .navbar-nav .download-button.show {
-  opacity: 1;
+.navbar-custom .navbar-nav .download-button.hide {
+  opacity: 0;
 }
 
 .navbar-custom .navbar-nav .download-button a {

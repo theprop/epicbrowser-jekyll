@@ -8,15 +8,17 @@ let BeautifulJekyllJS = {
 		setTimeout(BeautifulJekyllJS.initNavbar, 10);
 
 		// Shorten the navbar after scrolling a little bit down
-		$(window).scroll(function () {
+		$(window).on("scroll", function () {
 			if ($(".navbar").offset().top > 50) $(".navbar").addClass("top-nav-short");
 			else $(".navbar").removeClass("top-nav-short");
 		});
 
 		// Display "Download Epic" button after scrolling past lead section (home page) or by default in other pages
-		$(window).scroll(function () {
-			if ($("#asSeenIn").length > 0 && $(".navbar").offset().top > $("#asSeenIn").offset().top) $(".navbar-nav .download-button").addClass("show");
-			else $(".navbar-nav .download-button").removeClass("show");
+		if ($("#asSeenIn").length > 0 && $(".navbar").offset().top < $("#asSeenIn").offset().top) $(".navbar-nav .download-button").addClass("hide");
+
+		$(window).on("scroll", function () {
+			if ($("#asSeenIn").length > 0 && $(".navbar").offset().top < $("#asSeenIn").offset().top) $(".navbar-nav .download-button").addClass("hide");
+			else $(".navbar-nav .download-button").removeClass("hide");
 		});
 
 		// On mobile, hide the avatar when expanding the navbar menu
