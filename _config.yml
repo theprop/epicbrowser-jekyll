@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Epic Browser
+title: Epic Privacy Browser
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -38,7 +38,6 @@ footer-links:
     privacy-policy: "privacy-policy"
     about: "about-us"
     custom-browser: "custom-browser"
-    enterprise-browser: "enterprise-browser"
     sponsor: "sponsor"
 
 ################
