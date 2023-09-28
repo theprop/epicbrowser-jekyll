@@ -121,23 +121,23 @@ strong.bolder {
 }
 
 button {
-  background-color: #0099CC;
+  background-color: #404040;
   color: #FFF;
   font-weight: 800;
   padding: 0.5rem 1rem;
   border: unset;
-  -webkit-transition: background-color .3s ease-in-out;
-  -moz-transition: background-color .3s ease-in-out;
-  transition: background-color .3s ease-in-out;
+  -webkit-transition: background-color .15s ease-in-out;
+  -moz-transition: background-color .15s ease-in-out;
+  transition: background-color .15s ease-in-out;
 }
 
 button:hover,
 button:focus {
-  background-color: #656767;
+  background-color: #0099CC;
   text-decoration: none;
-  -webkit-transition: background-color .3s ease-in-out;
-  -moz-transition: background-color .3s ease-in-out;
-  transition: background-color .3s ease-in-out;
+  -webkit-transition: background-color .15s ease-in-out;
+  -moz-transition: background-color .15s ease-in-out;
+  transition: background-color .15s ease-in-out;
 }
 
 /* Comments */
@@ -233,25 +233,25 @@ button:focus {
   display: flex;
   gap: 0.5rem;
   height: inherit;
-  background-color: #0099CC;
+  background-color: {{ site.navbar-hover-col | default: "#0085A1" }};
   color: #FFF;
   font-weight: 800;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
   border: unset;
-  -webkit-transition: background-color .3s ease-in-out;
-  -moz-transition: background-color .3s ease-in-out;
-  transition: background-color .3s ease-in-out;
+  -webkit-transition: background-color .15s ease-in-out;
+  -moz-transition: background-color .15s ease-in-out;
+  transition: background-color .15s ease-in-out;
 }
 
 .navbar-custom .navbar-nav .download-button a:hover,
 .navbar-custom .navbar-nav .download-button a:focus {
-  background-color: #656767;
+  background-color: {{ site.navbar-text-col | default: "#404040" }};
   text-decoration: none;
-  -webkit-transition: background-color .3s ease-in-out;
-  -moz-transition: background-color .3s ease-in-out;
-  transition: background-color .3s ease-in-out;
+  -webkit-transition: background-color .15s ease-in-out;
+  -moz-transition: background-color .15s ease-in-out;
+  transition: background-color .15s ease-in-out;
 }
 
 .navbar-custom .navbar-nav .nav-link {
