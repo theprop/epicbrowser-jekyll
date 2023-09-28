@@ -482,6 +482,11 @@ main.home-page .innovation {
   background-attachment: fixed;
 }
 
+main.home-page .learn-more {
+  background-color: #333;
+  color: #FFF;
+}
+
 @media (min-width: 768px) {
   main.home-page .innovation {
     background-attachment: scroll;
