@@ -39,6 +39,18 @@ footer:
     sponsor: "Sponsor Epic"
 
 ##################################################
+# --- Home page text --- #
+##################################################
+
+home:
+  use-epic: "<strong>Use Epic</strong>. Stop getting tracked."
+  block-tracking: "<strong>Block 600+ tracking attempts</strong> in an average browsing session."
+  free-vpn: "Turn on network privacy with our <strong>free VPN</strong>."
+  join-users: "Join <strong>hundreds of thousands of users</strong> who've chosen privacy."
+  asi: "As seen in"
+  desc: "The Epic Privacy Browser is a fast, private, secure, chromium-based web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more."
+
+##################################################
 # --- FAQ: Questions and Answers --- #
 ##################################################
 

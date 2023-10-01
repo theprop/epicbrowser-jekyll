@@ -11,9 +11,9 @@
           <div class="home-heading">
             <h1 class="sr-only">{{ page.title | strip_html }}</h1>
             <div class="intro-text">
-              <p><strong>Use Epic</strong>. Stop getting tracked.</p>
-              <p><strong>Block 600+ tracking attempts</strong> in an average browsing session.</p>
-              <p>Turn on network privacy with our <strong>free VPN</strong>.</p>
+              <p>{{ site.data[site.active_lang].home["use-epic"] }}</p>
+              <p>{{ site.data[site.active_lang].home["block-tracking"] }}</p>
+              <p>{{ site.data[site.active_lang].home["free-vpn"] }}</p>
             </div>
             <div class="download">
               <a href="/thank-you">
@@ -32,7 +32,7 @@
               <a href="http://www.pcmag.com/article2/0,2817,2429017,00.asp" target="_blank" rel="noreferrer">
                 <img src="/assets/img/asi/seen_pcmag.png" height="80px" alt="As seen on PC Magazine" />
               </a>
-              <p class="text-center text-md-right">Join hundreds of thousands of users who've chosen privacy.</p>
+              <p class="text-center text-md-right">{{ site.data[site.active_lang].home["join-users"] }}</p>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
     </div>
   </div>
   <div id="asSeenIn" class="carousel slide" data-ride="carousel">
-    <h2 class="text-uppercase">As seen in</h2>
+    <h2 class="text-uppercase">{{ site.data[site.active_lang].home.asi }}</h2>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <a href="http://www.fastcoexist.com/3018133/a-browser-to-keep-the-nsa-from-snooping-on-you" target="_blank" rel="noreferrer">
@@ -109,7 +109,7 @@
   <div class="container-xl">
     <div class="row epic-desc">
         <div class="col-lg-11">
-            <p class="h2">The Epic Privacy Browser is a fast, private, secure, chromium-based web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more.</p>
+            <p class="h2">{{ site.data[site.active_lang].home.desc }}</p>
         </div>
     </div>
   </div>
