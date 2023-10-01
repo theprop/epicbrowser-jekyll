@@ -66,7 +66,7 @@
                   {%- else -%}
                     <a
                       class="dropdown-item{% if site.active_lang == lang %} disabled"aria-current="true" aria-disabled="true{% endif %}"
-                      href="{% if site.active_lang != lang %}/{{ lang }}{% if page.path contains "404" and page.path contains ".html" %}{% else %}{{ page.url }}{% endif %}{% else %}#{% endif %}"
+                      {% static_href %}href="{% if site.active_lang != lang %}/{{ lang }}{% if page.path contains "404" and page.path contains ".html" %}{% else %}{{ page.url }}{% endif %}{% else %}#{% endif %}"{% endstatic_href %}
                     >
                       {{ lang }} <span class="sr-only">{{ site.data.lang[lang] }}</span>
                     </a>
