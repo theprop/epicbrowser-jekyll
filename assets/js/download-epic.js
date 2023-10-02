@@ -45,6 +45,7 @@ function downloadFile() {
 		// Create and trigger a download link
 		const link = document.createElement("a");
 		link.href = downloadLink;
+		if (userOS === "Android" || userOS === "iOS") link.target = "_blank";
 		if (userOS === "Windows" || userOS === "Mac OS (Intel-based)" || userOS === "Mac OS (Arm-based)") link.download = true;
 		link.click();
 	} catch (err) {
