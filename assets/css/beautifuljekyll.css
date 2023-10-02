@@ -939,7 +939,10 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 @media (min-width: 768px) {
   .intro-header .home-heading .download .app-links {
+    width: 420px;
     flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
   }
 }
 @media (min-width: 1200px) {
