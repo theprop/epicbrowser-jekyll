@@ -258,7 +258,7 @@ date_format: "%B %-d, %Y"
 #fb_app_id: ""
 
 # Polyglot settings (plugin repository and documentation: https://github.com/untra/polyglot)
-languages: ["en", "fr"] # ISO 639-1 language codes of languages to be supported on the website
+languages: ["en"] # ISO 639-1 language codes of languages to be supported on the website
 default_lang: "en" # default fallback language in which to display website content
 exclude_from_localization: ["assets"] # root-level files and folders to exclude from localisation
 parallel_localization: true # whether to run language processing in parallel or serial (when in doubt, just default to "true" as per the plugin's documentation)
