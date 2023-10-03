@@ -49,7 +49,7 @@ Translations for the French version of the site should be provided in `fr.yml`.
 ```
 nav:
     download: "Télécharger Epic"
-    key-features: "Fonctionnalités Clés"
+    key-features: "Fonctionnalités clés"
     blog: "Blog"
     forum: "Forum"
     donate: "Faire un don"
