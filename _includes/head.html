@@ -24,11 +24,11 @@
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}" />
 	{% endif %} {% include gtag.html %} {% include gtm_head.html %} {% include google_analytics.html %} {% include cloudflare_analytics.html %} {% if layout.common-ext-css %} {% for css in
 	layout.common-ext-css %} {% include ext-css.html css=css %} {% endfor %} {% endif %} {% if layout.common-css %} {% for css in layout.common-css %}
-	<link rel="stylesheet" href="{{ css | relative_url }}" />
+	<link rel="stylesheet" href="{{ css | absolute_url }}" />
 	{% endfor %} {% endif %} {% if site.site-css %} {% for css in site.site-css %}
-	<link rel="stylesheet" href="{{ css | relative_url }}" />
+	<link rel="stylesheet" href="{{ css | absolute_url }}" />
 	{% endfor %} {% endif %} {% if page.ext-css %} {% for css in page.ext-css %} {% include ext-css.html css=css %} {% endfor %} {% endif %} {% if page.css %} {% for css in page.css %}
-	<link rel="stylesheet" href="{{ css | relative_url }}" />
+	<link rel="stylesheet" href="{{ css | absolute_url }}" />
 	{% endfor %} {% endif %} {% if site.fb_app_id %}
 	<meta property="fb:app_id" content="{{ site.fb_app_id }}" />
 	{% endif %} {% if site.title %}
@@ -65,6 +65,6 @@
 	{% if img != "" %}
 	<meta name="twitter:image" content="{{ img | absolute_url }}" />
 	{% endif %} {% include matomo.html %} {% if page.comments and site.staticman.repository and site.staticman.branch %}
-	<link rel="stylesheet" href='{{ "/assets/css/staticman.css" | relative_url }}' />
+	<link rel="stylesheet" href='{{ "/assets/css/staticman.css" | absolute_url }}' />
 	{% endif %} {% if page.head-extra %} {% for file in page.head-extra %} {% include {{ file }} %} {% endfor %} {% endif %}
 </head>
