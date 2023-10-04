@@ -613,14 +613,25 @@ main.home-page .innovation {
   background-color: #FFF;
 }
 
+@media (min-width: 768px) {
+  main.home-page .innovation {
+    background-attachment: scroll;
+  }
+}
+
 main.home-page .learn-more {
   background-color: #333;
   color: #FFF;
 }
 
+main.home-page .browser-comparison {
+  padding-top: unset;
+}
+
 @media (min-width: 768px) {
-  main.home-page .innovation {
-    background-attachment: scroll;
+  main.home-page .browser-comparison table {
+    width: fit-content;
+    margin: auto;
   }
 }
 
@@ -678,6 +689,32 @@ main.home-page .innovation .card-container {
 
 main.home-page .innovation .card {
   background-color: #FDF5D4CC;
+}
+
+main.home-page .browser-comparison table tr {
+  border: unset;
+}
+
+main.home-page .browser-comparison table thead th.icon,
+main.home-page .browser-comparison table td {
+  width: fit-content;
+  text-align: center;
+}
+
+main.home-page .browser-comparison table img {
+  max-width: unset;
+}
+
+main.home-page .browser-comparison table .fa-check {
+  color: #3CB371;
+}
+
+main.home-page .browser-comparison table .fa-times {
+  color: #B43C3C;
+}
+
+main.home-page .browser-comparison .protected-from th:first-child {
+  padding-left: 2rem;
 }
 
 /* --- Footer --- */

@@ -167,19 +167,22 @@ permalink: /
         </div>
     </div>
     <div class="browser-comparison">
-        <h2 class="text-center">Browser comparison</h2>
-        <table class="table">
+        <h2 class="text-center">Epic vs. other browsers</h2>
+        <table class="table table-borderless table-responsive-md">
             <thead>
                 <tr>
-                    <th scope="col">Your browsing history is:</th>
-                    <th scope="col"><img src="/assets/img/epic_logo.png" height="40px" alt="Epic Privacy Browser" /></th>
-                    <th scope="col"><img src="/assets/img/browsers/chrome.png" height="40px" alt="Google Chrome" /></th>
-                    <th scope="col"><img src="/assets/img/browsers/edge.png" height="40px" alt="Microsoft Edge" /></th>
-                    <th scope="col"><img src="/assets/img/browsers/firefox.png" height="40px" alt="Mozilla Firefox" /></th>
-                    <th scope="col"><img src="/assets/img/browsers/safari.png" height="40px" alt="Safari" /></th>
+                    <th scope="col"></th>
+                    <th scope="col" class="icon"><img src="/assets/img/epic_logo.png" height="40px" alt="Epic Privacy Browser" title="Epic Privacy Browser" /></th>
+                    <th scope="col" class="icon"><img src="/assets/img/browsers/chrome.png" height="40px" alt="Google Chrome" title="Google Chrome" /></th>
+                    <th scope="col" class="icon"><img src="/assets/img/browsers/edge.png" height="40px" alt="Microsoft Edge" title="Microsoft Edge" /></th>
+                    <th scope="col" class="icon"><img src="/assets/img/browsers/firefox.png" height="40px" alt="Mozilla Firefox" title="Mozilla Firefox" /></th>
+                    <th scope="col" class="icon"><img src="/assets/img/browsers/safari.png" height="40px" alt="Safari" title="Safari" /></th>
                 </tr>
             </thead>
             <tbody>
+                <tr class="thead-dark">
+                    <th class="text-center" scope="row" colspan="6">Your browsing history is:</th>
+                </tr>
                 <tr>
                     <th scope="row">Deleted from your computer</th>
                     <td><i class="fas fa-check"></i></td>
@@ -189,9 +192,9 @@ permalink: /
                     <td><i class="fas fa-times"></i></td>
                 </tr>
                 <tr>
-                    <th class="text-center" scope="row" colspan="6">Protected from:</th>
+                    <th scope="row" colspan="6">Protected from:</th>
                 </tr>
-                <tr>
+                <tr class="protected-from">
                     <th scope="row">Your ISP</th>
                     <td><i class="fas fa-check"></i></td>
                     <td><i class="fas fa-times"></i></td>
@@ -199,7 +202,7 @@ permalink: /
                     <td><i class="fas fa-times"></i></td>
                     <td><i class="fas fa-times"></i></td>
                 </tr>
-                <tr>
+                <tr class="protected-from">
                     <th scope="row">Your government</th>
                     <td><i class="fas fa-check"></i></td>
                     <td><i class="fas fa-times"></i></td>
@@ -207,7 +210,7 @@ permalink: /
                     <td><i class="fas fa-times"></i></td>
                     <td><i class="fas fa-times"></i></td>
                 </tr>
-                <tr>
+                <tr class="protected-from">
                     <th scope="row">Hundreds of data collectors</th>
                     <td><i class="fas fa-check"></i></td>
                     <td><i class="fas fa-times"></i></td>
@@ -215,7 +218,7 @@ permalink: /
                     <td><i class="fas fa-check"></i></td>
                     <td><i class="fas fa-times"></i></td>
                 </tr>
-                <tr>
+                <tr class="protected-from">
                     <th scope="row">Your employer</th>
                     <td><i class="fas fa-check"></i></td>
                     <td><i class="fas fa-times"></i></td>
