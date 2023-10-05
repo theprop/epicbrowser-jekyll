@@ -713,6 +713,14 @@ main.home-page .browser-comparison table .fa-times {
   color: #B43C3C;
 }
 
+main.home-page .browser-comparison table .fa-star {
+  color: #3CB371;
+}
+
+main.home-page .browser-comparison table .fa-star-half {
+  color: #3CB371;
+}
+
 main.home-page .browser-comparison .protected-from th:first-child {
   padding-left: 2rem;
 }
