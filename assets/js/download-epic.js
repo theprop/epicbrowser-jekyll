@@ -26,10 +26,10 @@ function downloadFile() {
 				downloadLink = "https://cdn.epicbrowser.com/winsetup/EpicSetup.exe";
 				break;
 			case "Mac OS (Intel-based)":
-				downloadLink = "https://cdn.epicbrowser.com/macintel117/epic_117.0.5938.88.dmg";
+				downloadLink = "https://cdn.epicbrowser.com/mac117intel/epic_117.0.5938.92.dmg";
 				break;
 			case "Mac OS (Arm-based)":
-				downloadLink = "https://cdn.epicbrowser.com/macarm117/epic_117.0.5938.88.dmg";
+				downloadLink = "https://cdn.epicbrowser.com/mac117arm/epic_117.0.5938.92.dmg";
 				break;
 			case "Android":
 				downloadLink = "https://play.google.com/store/apps/details?id=com.epic.browser&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
