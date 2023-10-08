@@ -19,7 +19,7 @@ title: Epic Privacy Browser
 navbar-links:
     key-features: "key-features"
     blog: "https://blog.epicbrowser.com/"
-    forum: "http://forum.epicbrowser.com/"
+    forum: "https://forum.epicbrowser.com/"
     donate: "donate"
     about: "about-us"
     faq: "faq"
@@ -40,7 +40,7 @@ footer-links:
     about: "about-us"
     custom-browser: "custom-browser"
     sponsor: "sponsor"
-    email: "email"
+    email: "email list"
 
 ################
 # --- Logo --- #
