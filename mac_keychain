@@ -3,7 +3,7 @@ lang: en
 layout: page
 title: Mac Keychain Alerts
 subtitle: For Epic Browser Passwords Storage
-permalink: /mac_keychain/
+permalink: /mac_keychain
 ---
 <h1>Mac Epic Users: Epic only accesses Epic-related data that you choose to save in your Keychain</h1>
 <div style="text-align: center;">
