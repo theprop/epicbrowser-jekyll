@@ -20,3 +20,21 @@ Epic has no permission nor will it ever ask for permission to access any data in
 </li>
 </ul>
 </div>
+
+
+
+<h1>Mac Epic Users: Epic only accesses Epic-related data that you choose to save in your Keychain</h1>
+<div style="text-align: center;">
+    <img src="https://cdn.epicbrowser.com/images/keychain.png" height="190" />
+</div>
+<div style="margin: 0 auto;">
+    <ul style="list-style:url(https://cdn.epicbrowser.com/images/square.png); margin-bottom: 20px;">
+        <li id="li" style="font-size: 1em;">Epic uses default Chromium behavior which is to store passwords you choose to save in Epic in the Mac Keychain. This is why Epic will ask for permission to access "your confidential information stored in Epic Safe Storage" in your Keychain.</li>
+        <li id="li">Epic has no permission nor will it ever ask for permission to access any data in your Keychain unrelated to Epic.</li>
+        <li id="li">It is annoying to click "Deny" every time you open Epic so we recommend setting it to "Always Allow" for your convenience. Again, the only data you are giving Epic access to is "Epic Safe Storage" which will contain passwords you choose to save in Epic.</li>
+    </ul>
+</div>
+
+
+
+
