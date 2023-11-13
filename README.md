@@ -86,6 +86,8 @@ To add a French version of the same page, the same `permalink` must be provided 
 
 ```
 ---
+
+Need to add how to do a manual run of action to deploy to github pages.  
 lang: fr
 layout: page
 title: Contactez-nous
