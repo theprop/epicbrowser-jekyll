@@ -38,10 +38,10 @@ function downloadFile() {
 				downloadLink = "https://cdn.epicbrowser.com/winsetup/EpicSetup.exe";
 				break;
 			case "Mac OS (Intel-based)":
-				downloadLink = "https://cdn.epicbrowser.com/mac117intel/epic_117.0.5938.92.dmg";
+				alert("Dear Mac User, please check your system via "About This Mac" as to whether you have an Arm-based (newer M1 or M2 processor) or older Intel-based Mac, then download the correct version of Epic on the next page.");
 				break;
 			case "Mac OS (Arm-based)":
-				downloadLink = "https://cdn.epicbrowser.com/mac117arm/epic_117.0.5938.92.dmg";
+				alert("Dear Mac User, please check your system via "About This Mac" as to whether you have an Arm-based (newer M1 or M2 processor) or older Intel-based Mac, then download the correct version of Epic on the next page.");
 				break;
 			case "Android":
 				downloadLink = "https://play.google.com/store/apps/details?id=com.epic.browser&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
