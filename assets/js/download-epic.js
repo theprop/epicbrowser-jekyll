@@ -38,7 +38,7 @@ function downloadFile() {
 				downloadLink = "https://apps.apple.com/us/app/epic-privacy-browser-w-vpn/id1502032811?mt=8";
 				break;
 			default:
-				alert("Sorry, Epic is not yet available for your operating system.");
+				alert("Sorry, we either couldn't detect your OS or Epic is not yet available for your operating system.");
 				return;
 		}
 
