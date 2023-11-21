@@ -1,18 +1,30 @@
 // Function to detect the user's operating system
 function detectOS() {
-	const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-	if (/android/i.test(userAgent)) return "Android";
-	if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) return "iOS";
-	if (/linux/i.test(userAgent)) return "Linux";
-	if (/mac/i.test(userAgent)) {
-		if (/intel/i.test(userAgent)) return "Mac OS (Intel-based)";
-		if (/arm/i.test(userAgent)) return "Mac OS (Arm-based)";
-	}
-	if (/win/i.test(userAgent)) return "Windows";
-	if (/windows phone/i.test(userAgent)) return "Windows Phone";
+    // Original detection
+    if (/android/i.test(userAgent)) return "Android";
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) return "iOS";
+    if (/linux/i.test(userAgent)) return "Linux";
+    if (/mac/i.test(userAgent)) {
+        // If Mac OS, run WebGL check to determine Arm or Intel
+        const canvas = document.createElement("canvas");
+        const gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
 
-	return "Unknown";
+        if (!gl) return "Mac OS (Unknown)";
+
+        const renderer = gl.getParameter(gl.RENDERER).toLowerCase();
+
+        if (/arm/i.test(userAgent) || /arm/i.test(renderer)) return "Mac OS (Arm-based)";
+        if (/intel/i.test(userAgent) || /intel/i.test(renderer)) return "Mac OS (Intel-based)";
+
+        // If it reaches here, Mac OS but unable to determine Arm or Intel
+        return "Mac OS (Unknown)";
+    }
+    if (/win/i.test(userAgent)) return "Windows";
+    if (/windows phone/i.test(userAgent)) return "Windows Phone";
+
+    return "Unknown";
 }
 
 // Function to trigger the download based on the detected OS
