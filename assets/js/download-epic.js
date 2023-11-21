@@ -6,21 +6,7 @@ function detectOS() {
     if (/android/i.test(userAgent)) return "Android";
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) return "iOS";
     if (/linux/i.test(userAgent)) return "Linux";
-    if (/mac/i.test(userAgent)) {
-        // If Mac OS, run WebGL check to determine Arm or Intel
-        const canvas = document.createElement("canvas");
-        const gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
-
-        if (!gl) return "Mac OS (Unknown)";
-
-        const renderer = gl.getParameter(gl.RENDERER).toLowerCase();
-
-        if (/arm/i.test(userAgent) || /arm/i.test(renderer)) return "Mac OS (Arm-based)";
-        if (/intel/i.test(userAgent) || /intel/i.test(renderer)) return "Mac OS (Intel-based)";
-
-        // If it reaches here, Mac OS but unable to determine Arm or Intel
-        return "Mac OS (Unknown)";
-    }
+    if (/mac/i.test(userAgent)) return "Mac OS (Arm-based)";
     if (/win/i.test(userAgent)) return "Windows";
     if (/windows phone/i.test(userAgent)) return "Windows Phone";
 
