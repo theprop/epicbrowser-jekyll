@@ -41,6 +41,12 @@ jobs:
               env:
                   JEKYLL_ENV: production
             - name: Upload artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: github-pages
+                path: _site
+                retention-days: 1
+            - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
                   path: _site
