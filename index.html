@@ -1,591 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-	 
-
-	<title>Epic Privacy Browser</title>
-	<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
-
-	
-
-	<meta name="description" content="Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more." />
-
-	   
- 
- 
- 
-   <link rel="preload" as="font" href="/assets/webfonts/lora-bold-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/lora-bold.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/lora-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/lora-medium-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/lora-medium.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/lora-regular.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/lora-semibold-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/lora-semibold.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-bold-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-bold.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-extra-bold-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-extra-bold.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-light-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-light.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-medium-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-medium.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-regular.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-semibold-italic.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/assets/webfonts/open-sans-semibold.ttf" type="font/ttf" crossorigin="anonymous">
-     
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-
-  
-  <link rel="stylesheet" href="/assets/css/font-awesome-all.min.css">
-
-    
-	<link rel="stylesheet" href="/assets/css/bootstrap-social.css" />
-	
-	<link rel="stylesheet" href="/assets/css/beautifuljekyll.css" />
-	      
-	<meta property="og:site_name" content="Epic Privacy Browser" />
-	<meta property="og:title" content='Epic Privacy Browser' />
-	<meta property="og:description" content="Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more." />
-
-	 
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="/" />
-	<link rel="canonical" href="/" />
-	 
-	<meta name="twitter:card" content="summary" />
-	
-	<meta name="twitter:site" content="@EpicBrowser" />
-	<meta name="twitter:creator" content="@EpicBrowser" />
-
-	<meta property="twitter:title" content='Epic Privacy Browser' />
-	<meta property="twitter:description" content="Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more." />
-
-	 
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epic Privacy Browser — A free browser with no catch</title>
+<meta name="description" content="Epic is a fast, private Chromium-based browser that blocks ads, trackers and fingerprinting by default. No ad network, no data deals.">
+<link rel="icon" href="https://epicbrowser.com/assets/img/epic_logo.png">
+<link rel="preload" href="fonts/instrument-serif-regular-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-regular-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/epic.css">
 </head>
-
-
 <body>
-
+<nav class="nav"><div class="wrap">
+  <a href="index.html" aria-label="Epic home"><img src="https://epicbrowser.com/assets/img/epic_logo.png" alt="Epic Privacy Browser"></a>
+  <div class="nav-links"><a href="key-features.html">Features</a><a href="https://blog.epicbrowser.com/">Blog</a><a href="https://forum.epicbrowser.com/">Forum</a><a href="faq.html">FAQ</a><a href="about-us.html">About Us</a><a href="contact-us.html">Contact Us</a><a href="donate.html">Donate</a></div>
   
-
-
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand navbar-brand-logo" href="/"><img alt="Epic Privacy Browser Logo" src="/assets/img/epic_logo_black.png"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="main-navbar">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item download-button">
-          <a href="/thank-you">
-            <img src="/assets/img/epic_logo.png" width="24px" height="24px" />
-            <span>Download Epic</span>
-          </a>
-        </li>
-          
-          <li class="nav-item">
-            
-            <a class="nav-link" href="/key-features">Key Features</a>
-          </li>
-          
-          <li class="nav-item">
-            
-            <a class="nav-link" href="https://blog.epicbrowser.com/">Blog</a>
-          </li>
-          
-          <li class="nav-item">
-            
-            <a class="nav-link" href="https://forum.epicbrowser.com/">Forum</a>
-          </li>
-          
-          <li class="nav-item">
-            
-            <a class="nav-link" href="/donate">Donate</a>
-          </li>
-          
-          <li class="nav-item">
-            
-            <a class="nav-link" href="/about-us">About Us</a>
-          </li>
-          
-          <li class="nav-item">
-            
-            <a class="nav-link" href="/faq">FAQ</a>
-          </li>
-          
-          <li class="nav-item">
-            
-            <a class="nav-link" href="/contact-us">Contact</a>
-          </li></ul>
+</div></nav>
+<header class="hero"><div class="wrap">
+  <div>
+    <h1 class="h1"><span class="p">Epic.</span> A free browser<br>with <em class="o">no catch.</em></h1>
+    <p class="lead" style="max-width:560px">No ad network. No rewards token. No AI training. No data deals. We've turned that money down for over a decade.</p>
+    <div class="btns">
+      <a class="btn" href="thank-you.html">Download Epic, free →</a>
+      <a class="btn-2" href="https://apps.apple.com/us/app/epic-privacy-browser-w-vpn/id1502032811?mt=8">App Store</a>
+      <a class="btn-2" href="https://play.google.com/store/apps/details?id=com.epic.browser">Google Play</a>
+    </div>
+    <div class="small" style="margin-top:18px">Join hundreds of thousands of users who've chosen privacy.</div>
   </div>
-
-  
-
-  
-
-</nav>
-
-
-
-
-
-  <!-- TODO this file has become a mess, refactor it -->
-
-
-
-
-<header class="header-section">
-  <div class="intro-header no-img">
-    <div class="container-md">
-      <div class="row">
-        <div class="col-xl-8 col-lg-10">
-          <div class="home-heading">
-            <h1 class="sr-only">Epic Privacy Browser</h1>
-            <div class="intro-text">
-              <p><strong>Use Epic</strong>. Stop getting tracked.</p>
-              <p><strong>Block 600+ tracking attempts</strong> in an average browsing session.</p>
-            </div>
-            <div class="download">
-              <a href="/thank-you">
-                <img src="/assets/img/presentation/download-button.png" width="420px" alt="Download Epic today" />
-              </a>
-              <div class="app-links">
-                <a href="https://play.google.com/store/apps/details?id=com.epic.browser&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                  <img alt="Get it on Google Play" height="55px" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
-                </a>
-                <a href="https://apps.apple.com/us/app/epic-privacy-browser-w-vpn/id1502032811?mt=8">
-                  <img alt="Get it on the Apple App Store" height="37px" height="37px" src="https://cdn.epicbrowser.com/DownloadAppleAppStore.svg">
-                </a>
-              </div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center" style="gap: 1.25rem;">
-              <a href="http://www.pcmag.com/article2/0,2817,2429017,00.asp" target="_blank" rel="noreferrer">
-                <img src="/assets/img/asi/seen_pcmag.png" height="80px" alt="As seen on PC Magazine" />
-              </a>
-              <p class="text-center text-md-right">Join <strong>hundreds of thousands of users</strong> who've chosen privacy.</p>
-            </div>
-          </div>
-        </div>
+  <div class="stats">
+    <div class="stat stat-o"><div class="n">600+</div><div class="t">Tracking attempts blocked in an average browsing session.</div></div>
+    <div class="stat stat-b"><div class="n">15</div><div class="t">Tracking attempts blocked on the average website. Larger sites run twice as many.</div></div>
+    <div class="stat stat-p"><div class="n">10+</div><div class="t">Years of transparency, security and privacy.</div></div>
+  </div>
+</div></header>
+<section class="band"><div class="wrap"><p>The Epic Privacy Browser is a fast, private, secure, chromium-based web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more.</p></div></section>
+<section class="cost"><div class="wrap">
+  <div class="top">
+    <h2 class="h2-lg">Tracking isn't free.<br><em>You pay for it.</em></h2>
+    <div class="card">
+      <h3>Less Tracking = <em class="o">Lower Prices</em></h3>
+      <div class="bul">
+        <div><span></span><p>Consumer Reports found that browsers which regularly deleted cookies had airfare prices $340 lower.</p></div>
+        <div><span class="pp"></span><p>The Wall Street Journal discovered many websites changed prices based on your location.</p></div>
       </div>
     </div>
   </div>
-  <div id="asSeenIn" class="carousel slide" data-ride="carousel">
-    <h2 class="text-uppercase">As seen in</h2>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="http://www.fastcoexist.com/3018133/a-browser-to-keep-the-nsa-from-snooping-on-you" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_fc2bw2.jpg" height="25px" />
-        </a>
-        <a href="http://www.techworld.com/security/best-8-secure-browsers-2016-3246550/" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_techworldbw.jpg" height="25px" />
-        </a>
-        <a href="http://www.pcworld.com/article/2898509/10-obscure-highly-specialized-browsers-that-will-make-you-forget-about-chrome-firefox-and-ie.html#slide10" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_pc2bw.jpg" height="25px" />
-        </a>
-        <a href="http://www.darkreading.com/risk-management/custom-chrome-browser-promises-more-privacy-no-tracking/d/d-id/1111356" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_iwsbw.jpg" height="25px" />
-        </a>
-        <a href="http://www.computerworlduk.com/galleries/operating-systems/best-browsers-for-privacy-3628363/#7" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_cw.png" height="25px" />
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://www.youtube.com/watch?v=GJCH0HUhdWU" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_tedbw.jpg" height="25px" />
-        </a>
-        <a href="https://lifehacker.com/epic-privacy-browser-blocks-tracking-ads-and-more-1278427701" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_lhbw.jpg" height="25px" />
-        </a>
-        <a href="http://www.cnetfrance.fr/news/epic-privacy-browser-un-chrome-qui-respecte-la-vie-privee-39794058.htm" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_cbw.jpg" height="25px" />
-        </a>
-        <a href="http://www.chip.de/downloads/Epic-Privacy-Browser_75452475.html" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_chipbw.jpg" height="25px" />
-        </a>
-        <a href="http://www.focus.de/digital/internet/der-grosse-browsertest-4-platz-epic-privacy-browser_id_4843312.html" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_focusbw.jpg" height="25px" />
-        </a>
-        <a href="http://computertotaal.nl/apple/review-epic-privacy-browser-62896" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_ctbw.jpg" height="25px" />
-        </a>
-        <a href="http://www.lifehack.org/articles/technology/epic-the-privacy-browser.html" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_lifehackbw.jpg" height="25px" />
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://www.datingnews.com/industry-trends/epic-browser-allows-people-to-keep-search-history-confidential/" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/datingnews.png" height="25px" />
-        </a>
-        <a href="http://www.networkworld.com/article/2169818/security/new-browser-blocks-snooping-adware--google-tracking.html" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_nw3bw.jpg" height="25px" />
-        </a>
-        <a href="http://www.zdnet.be/download/157268/het-privacyminnende-broertje-van-chrome/" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_zdnetbw.jpg" height="25px" />
-        </a>
-        <a href="http://www.makeuseof.com/tag/three-desktop-browsers-designed-protect-privacy/" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_makeuseofbw.jpg" height="25px" />
-        </a>
-        <a href="http://ejc.net/resources/article/investigating-epic-privacy-browser-we-will-not-be-controlled" target="_blank" rel="noreferrer">
-          <img src="/assets/img/asi/seen_ejcbw.jpg" height="25px" />
-        </a>
-      </div>
-    </div>
-    <ol class="carousel-indicators">
-      <li data-target="#asSeenIn" data-slide-to="0" class="active"></li>
-      <li data-target="#asSeenIn" data-slide-to="1"></li>
-      <li data-target="#asSeenIn" data-slide-to="2"></li>
-    </ol>
+  <div class="three">
+    <div><h3>Your money</h3><p class="muted">No price profiling by location or browsing history.</p></div>
+    <div><h3>Your time</h3><p class="muted">No ads or trackers to download, so pages finish loading sooner.</p></div>
+    <div><h3>Your attention</h3><p class="muted">No more creepy ads following you around.</p></div>
   </div>
-  <div class="container-xl">
-    <div class="row epic-desc">
-        <div class="col-lg-11">
-            <p class="h2">The Epic Privacy Browser is a fast, private, secure, chromium-based web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more.</p>
-        </div>
+</div></section>
+<section class="press"><div class="wrap">
+  <div class="hd"><div>As seen in</div><div></div></div>
+  <div class="row">
+    <a class="feat" href="http://www.pcmag.com/article2/0,2817,2429017,00.asp" target="_blank" rel="noopener" title="PC Magazine"><img src="https://epicbrowser.com/assets/img/asi/seen_pcmag.png" alt="PC Magazine"></a>
+    <div class="car" data-carousel>
+      <div style="flex:1;min-width:0"><div class="logos" data-page><a href="http://www.fastcoexist.com/3018133/a-browser-to-keep-the-nsa-from-snooping-on-you" target="_blank" rel="noopener" title="Fast Company"><img src="https://epicbrowser.com/assets/img/asi/seen_fc2bw2.jpg" alt="Fast Company"></a><a href="http://www.techworld.com/security/best-8-secure-browsers-2016-3246550/" target="_blank" rel="noopener" title="Techworld"><img src="https://epicbrowser.com/assets/img/asi/seen_techworldbw.jpg" alt="Techworld"></a><a href="http://www.pcworld.com/article/2898509/10-obscure-highly-specialized-browsers-that-will-make-you-forget-about-chrome-firefox-and-ie.html#slide10" target="_blank" rel="noopener" title="PCWorld"><img src="https://epicbrowser.com/assets/img/asi/seen_pc2bw.jpg" alt="PCWorld" class="short"></a><a href="http://www.darkreading.com/risk-management/custom-chrome-browser-promises-more-privacy-no-tracking/d/d-id/1111356" target="_blank" rel="noopener" title="Dark Reading"><img src="https://epicbrowser.com/assets/img/asi/seen_iwsbw.jpg" alt="Dark Reading" class="tall"></a></div><div class="logos" data-page hidden><a href="http://www.computerworlduk.com/galleries/operating-systems/best-browsers-for-privacy-3628363/#7" target="_blank" rel="noopener" title="Computerworld"><img src="https://epicbrowser.com/assets/img/asi/seen_cw.png" alt="Computerworld"></a><a href="https://www.youtube.com/watch?v=GJCH0HUhdWU" target="_blank" rel="noopener" title="TED"><img src="https://epicbrowser.com/assets/img/asi/seen_tedbw.jpg" alt="TED" class="tall"></a><a href="https://lifehacker.com/epic-privacy-browser-blocks-tracking-ads-and-more-1278427701" target="_blank" rel="noopener" title="Lifehacker"><img src="https://epicbrowser.com/assets/img/asi/seen_lhbw.jpg" alt="Lifehacker"></a><a href="http://www.cnetfrance.fr/news/epic-privacy-browser-un-chrome-qui-respecte-la-vie-privee-39794058.htm" target="_blank" rel="noopener" title="CNET France"><img src="https://epicbrowser.com/assets/img/asi/seen_cbw.jpg" alt="CNET France"></a></div><div class="logos" data-page hidden><a href="http://www.chip.de/downloads/Epic-Privacy-Browser_75452475.html" target="_blank" rel="noopener" title="CHIP"><img src="https://epicbrowser.com/assets/img/asi/seen_chipbw.jpg" alt="CHIP"></a><a href="http://www.focus.de/digital/internet/der-grosse-browsertest-4-platz-epic-privacy-browser_id_4843312.html" target="_blank" rel="noopener" title="Focus"><img src="https://epicbrowser.com/assets/img/asi/seen_focusbw.jpg" alt="Focus"></a><a href="http://computertotaal.nl/apple/review-epic-privacy-browser-62896" target="_blank" rel="noopener" title="Computer Totaal"><img src="https://epicbrowser.com/assets/img/asi/seen_ctbw.jpg" alt="Computer Totaal"></a><a href="http://www.lifehack.org/articles/technology/epic-the-privacy-browser.html" target="_blank" rel="noopener" title="Lifehack"><img src="https://epicbrowser.com/assets/img/asi/seen_lifehackbw.jpg" alt="Lifehack"></a></div><div class="logos" data-page hidden><a href="http://www.networkworld.com/article/2169818/security/new-browser-blocks-snooping-adware--google-tracking.html" target="_blank" rel="noopener" title="Network World"><img src="https://epicbrowser.com/assets/img/asi/seen_nw3bw.jpg" alt="Network World"></a><a href="http://www.zdnet.be/download/157268/het-privacyminnende-broertje-van-chrome/" target="_blank" rel="noopener" title="ZDNet"><img src="https://epicbrowser.com/assets/img/asi/seen_zdnetbw.jpg" alt="ZDNet"></a><a href="http://www.makeuseof.com/tag/three-desktop-browsers-designed-protect-privacy/" target="_blank" rel="noopener" title="MakeUseOf"><img src="https://epicbrowser.com/assets/img/asi/seen_makeuseofbw.jpg" alt="MakeUseOf"></a><a href="http://ejc.net/resources/article/investigating-epic-privacy-browser-we-will-not-be-controlled" target="_blank" rel="noopener" title="EJC"><img src="https://epicbrowser.com/assets/img/asi/seen_ejcbw.jpg" alt="EJC"></a></div></div>
+      <div class="dots"><button type="button" aria-label="Show logos set 1"></button><button type="button" aria-label="Show logos set 2"></button><button type="button" aria-label="Show logos set 3"></button><button type="button" aria-label="Show logos set 4"></button></div>
     </div>
   </div>
-</header>
-
-
-
-<main class="home-page">
-    <div class="need-epic">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-lg-11">
-                    <h2>Why you need Epic:</h2>
-                    <div class="card-container">
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_1.png" class="card-img-top" alt="No tracking. No spying.">
-                            <div class="card-body">
-                                <h3>No tracking. No spying.</h3>
-                                <p class="card-text">Visiting the average website without Epic results in 15 tracking attempts. Larger websites can have twice as many trackers as well as try to fingerprint your device.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_2.png" class="card-img-top" alt="No profiling.">
-                            <div class="card-body">
-                                <h3>No profiling.</h3>
-                                <p class="card-text">Protect your browsing history. No profiling. No filter bubbles.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_3.png" class="card-img-top" alt="No ads. No data abuse.">
-                            <div class="card-body">
-                                <h3>No ads. No data abuse.</h3>
-                                <p class="card-text">No more creepy ads following you around. Epic has a custom uBlock-based ad blocker which includes additional filter lists for maximum protection.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_4.png" class="card-img-top" alt="Lower prices.">
-                            <div class="card-body">
-                                <h3>Lower prices.</h3>
-                                <p class="card-text">Consumer reports found that browsers which regularly deleted cookies had airfare prices $340 lower. The Wall Street Journal discovered many websites changed prices based on your location.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_5.png" class="card-img-top" alt="Fast and secure.">
-                            <div class="card-body">
-                                <h3>Fast and secure.</h3>
-                                <p class="card-text">Built on Chromium like Chrome and Edge for exceptional security and speed. Every tab is a separate process for maximum data isolation.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_6.png" class="card-img-top" alt="Encrypted data preference.">
-                            <div class="card-body">
-                                <h3>Encrypted data preference.</h3>
-                                <p class="card-text">Maximize your data security. Epic makes a secure connection to websites that support it.</p>
-                            </div>
-                        </div>
-<!--                        <div class="card">-->
-<!--                            <img src="/assets/img/presentation/home_7.png" class="card-img-top" alt="Free VPN / network protection.">-->
-<!--                            <div class="card-body">-->
-<!--                                <h3>Free VPN / network protection.</h3>-->
-<!--                                <p class="card-text">Epic's free encrypted proxy (a VPN for the browser) is fast with nodes in seven countries including the U.S., the U.K., Canada, Singapore, Germany, France, and the Netherlands. Protect yourself from network snoops like your ISP, government, employer and others.</p>-->
-<!--                            </div> -->
-<!--                        </div> -->
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_8.png" class="card-img-top" alt="Unblock content.">
-                            <div class="card-body">
-                                <h3>Unblock content.</h3>
-                                <p class="card-text">Epic for desktop bypasses many paywalls. Install a free proxy / VPN extension to unblock websites wherever you are. Access an uncensored internet.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_9.png" class="card-img-top" alt="Cookie and fingerprinting protection.">
-                            <div class="card-body">
-                                <h3>Cookie and fingerprinting protection.</h3>
-                                <p class="card-text">Epic blocks third-party cookie tracking by default. Epic includes granular protections against a plethora of fingerprinting techniques that can track and profile you across all your devices.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_13.png" class="card-img-top" alt="One of 3 trusted privacy software companies.">
-                            <div class="card-body">
-                                <h3>One of 3 trusted privacy software companies.</h3>
-                                <p class="card-text">Only a few companies have taken a substantial loss of revenue rather than compromise their users' privacy and we're one of them.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_11.png" class="card-img-top" alt="Customize Epic with Chrome extensions.">
-                            <div class="card-body">
-                                <h3>Customize Epic with Chrome extensions.</h3>
-                                <p class="card-text">Make Epic your Epic with themes and extensions. Almost all of the 150,000+ Chrome WebStore extensions work in Epic.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/presentation/home_12.png" class="card-img-top" alt="Spy on spies. See who's tracking you.">
-                            <div class="card-body">
-                                <h3>Spy on the Spies. See who's tracking you.</h3>
-                                <p class="card-text">Via Epic's new tab page, see the companies and organizations tracking you in your other browsers.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="innovation">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-lg-11">
-                    <div class="header-container">
-                        <h2 class="text-center">Ten "Epic" firsts:</h2>
-                        <p></p>
-                    </div>
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="card-body">
-                                <p>The <strong>first privacy-focused Chromium-based browser</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p>The <strong>first highly secure and highly private browser</strong>.<br /><span style="font-size: 0.75rem;">(TOR is highly private but many nodes are run by malicious hosts)</span></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p>A <strong>10 year track record of transparency, security and privacy</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p>The <strong>first browser to include in-built tracking protection</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p>The <strong>first browser to include new tab page-based privacy data</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p>The <strong>first Chromium-based browser to include an encrypted data preference by default </strong>.<br /><span style="font-size: 0.75rem;">(HTTPS everywhere type protection)</span></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p>The <strong>first Chromium-based browser to include fingerprinting protection</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p>The <strong>first Chromium-based browser to include a built-in VPN / encrypted proxy with country selector</strong> (now supported by third parties).</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p>The <strong>first Chromium-based browser to offer an optional always-on private browsing mode</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p>The <strong>first mobile browser with an audio queue that can read a set of webpages to you</strong>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="browser-comparison" style="background-color:#f5f5f5;">
-                <hr style="height:8px;border-width:0;color:#cccccc;background-color:#cccccc">
-        <h2 class="text-center">Epic vs. other browsers</h2>
-        <table class="table table-borderless table-responsive-md">
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col" class="icon"><img src="/assets/img/epic_logo.png" height="40px" alt="Epic Privacy Browser" title="Epic Privacy Browser" /></th>
-                    <th scope="col" class="icon"><img src="/assets/img/browsers/chrome.png" height="40px" alt="Google Chrome" title="Google Chrome" /></th>
-                    <th scope="col" class="icon"><img src="/assets/img/browsers/edge.png" height="40px" alt="Microsoft Edge" title="Microsoft Edge" /></th>
-                    <th scope="col" class="icon"><img src="/assets/img/browsers/firefox.png" height="40px" alt="Mozilla Firefox" title="Mozilla Firefox" /></th>
-                    <th scope="col" class="icon"><img src="/assets/img/browsers/safari.png" height="40px" alt="Safari" title="Safari" /></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="thead-dark">
-                    <th class="text-center" scope="row" colspan="6">Your browsing history is:</th>
-                </tr>
-                <tr>
-                    <th scope="row">Deleted from your computer</th>
-                    <td><i class="fas fa-star"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                </tr>
-                <tr>
-                    <th scope="row" colspan="6">Protected from:</th>
-                </tr>
-                <tr class="protected-from">
-                    <th scope="row">Your ISP</th>
-                    <td><i class="fas fa-star"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                </tr>
-                <tr class="protected-from">
-                    <th scope="row">Your government</th>
-                    <td><i class="fas fa-star"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                </tr>
-                <tr class="protected-from">
-                    <th scope="row">Hundreds of data collectors</th>
-                    <td><i class="fas fa-star"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-star-half"></i></td>
-                    <td><i class="fas fa-star"></i></td>
-                    <td><i class="fas fa-star-half"></i></td>
-                </tr>
-                <tr class="protected-from">
-                    <th scope="row">Your employer</th>
-                    <td><i class="fas fa-star"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-times"></i></td>
-                </tr>
-            </tbody>
-        </table>
-     <br><span style="font-size: .75rem; display: block; text-align: center;">* Assumes the user is in private browsing mode (or disabled history in Epic) & enabled a VPN and Epic's ad blocker.</span>
-    </div>
-    <div class="learn-more">
-        <aside class="container-xl">
-            <div class="row">
-                <div class="col-lg-11">
-                    <div class="header-container text-center">
-                        <p class="h3">Want to learn more? Read about the primacy of privacy and Epic's <a href="/key-features">key features</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </aside>
-    </div>
-</main>
-
-
-  <footer>
-  <div class="container-md beautiful-jekyll-footer">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-      
-<ul class="list-inline text-center footer-links"><li class="list-inline-item">
-    <a href="https://www.facebook.com/EpicBrowser" title="Facebook" target="_blank" rel="noreferrer">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Facebook</span>
-   </a>
-  </li><li class="list-inline-item">
-    <a href="https://twitter.com/EpicBrowser" title="Twitter" target="_blank" rel="noreferrer">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Twitter</span>
-   </a>
-  </li><li class="list-inline-item">
-    <a href="mailto:alok [at] hiddenreflex [dot] com" title="Email me" target="_blank" rel="noreferrer">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Email me</span>
-   </a>
-  </li></ul>
-
-      
-      <ul class="list-inline bullet text-center footer-text-links"><li class="list-inline-item">
-            <a href="/tou">Terms of Use</a>
-          </li><li class="list-inline-item">
-            <a href="/privacy-policy">Privacy Policy</a>
-          </li><li class="list-inline-item">
-            <a href="/about-us">About Us</a>
-          </li><li class="list-inline-item">
-            <a href="/custom-browser">Custom Browser</a>
-          </li><li class="list-inline-item">
-            <a href="/sponsor">Sponsor Epic</a>
-          </li><li class="list-inline-item">
-            <a href="/email">Email List</a>
-          </li></ul>
-      <p class="copyright text-muted">
-      
-
-      
-      </p>
-      <p class="copyright text-muted">
-        &copy; 2025
-        <a class="text-muted" href="https://hiddenreflex.com" target="_blank" rel="noreferrer">Hidden Reflex</a>
-      </p>
-      </div>
-    </div>
+</div></section>
+<section class="rule-soft"><div class="wrap sec">
+  <h2 class="h2" style="font-size:clamp(30px,5.4vw,68px);line-height:1;margin-bottom:56px">Other browsers have privacy settings.<br><em class="p">Epic has privacy.</em></h2>
+  <div class="cmp-scroll"><div>
+    <div class="cmp hd"><span></span><span class="epic">Epic</span><span>Chrome</span><span>Edge</span><span>Safari</span><span>Firefox</span><span>Brave</span></div>
+    <div class="cmp"><span style="padding-right:16px">Blocks ads</span><span><span class="yes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span></span><span class="n">—</span><span class="n">—</span><span class="n">—</span><span class="n">—</span><span class="y">✓</span></div>
+    <div class="cmp"><span style="padding-right:16px">Blocks third-party trackers</span><span><span class="yes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span></span><span class="n">—</span><span class="pt">Partial</span><span class="y">✓</span><span class="y">✓</span><span class="y">✓</span></div>
+    <div class="cmp"><span style="padding-right:16px">Blocks fingerprinting</span><span><span class="yes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span></span><span class="n">—</span><span class="n">—</span><span class="pt">Partial</span><span class="pt">Partial</span><span class="y">✓</span></div>
+    <div class="cmp"><span style="padding-right:16px">Blocks cryptomining and ultrasound signaling</span><span><span class="yes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span></span><span class="pt">Partial</span><span class="n">—</span><span class="n">—</span><span class="pt">Partial</span><span class="pt">Partial</span></div>
+    <div class="cmp"><span style="padding-right:16px">Optional history deleted when you quit</span><span><span class="yes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span></span><span class="n">—</span><span class="n">—</span><span class="n">—</span><span class="n">—</span><span class="n">—</span></div>
+    <div class="cmp"><span style="padding-right:16px">No ads or crypto business</span><span><span class="yes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span></span><span class="n">—</span><span class="n">—</span><span class="pt">Partial</span><span class="pt">Partial</span><span class="n">—</span></div>
+  </div></div>
+  <div class="cmp-cards">
+    <div class="cmp-card"><div class="q"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Blocks ads</div><div class="r"><div><b>Chrome</b><span class="n">—</span></div><div><b>Edge</b><span class="n">—</span></div><div><b>Safari</b><span class="n">—</span></div><div><b>Firefox</b><span class="n">—</span></div><div><b>Brave</b><span class="y">✓</span></div></div></div>
+    <div class="cmp-card"><div class="q"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Blocks third-party trackers</div><div class="r"><div><b>Chrome</b><span class="n">—</span></div><div><b>Edge</b><span class="pt">Partial</span></div><div><b>Safari</b><span class="y">✓</span></div><div><b>Firefox</b><span class="y">✓</span></div><div><b>Brave</b><span class="y">✓</span></div></div></div>
+    <div class="cmp-card"><div class="q"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Blocks fingerprinting</div><div class="r"><div><b>Chrome</b><span class="n">—</span></div><div><b>Edge</b><span class="n">—</span></div><div><b>Safari</b><span class="pt">Partial</span></div><div><b>Firefox</b><span class="pt">Partial</span></div><div><b>Brave</b><span class="y">✓</span></div></div></div>
+    <div class="cmp-card"><div class="q"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Blocks cryptomining and ultrasound signaling</div><div class="r"><div><b>Chrome</b><span class="pt">Partial</span></div><div><b>Edge</b><span class="n">—</span></div><div><b>Safari</b><span class="n">—</span></div><div><b>Firefox</b><span class="pt">Partial</span></div><div><b>Brave</b><span class="pt">Partial</span></div></div></div>
+    <div class="cmp-card"><div class="q"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Optional history deleted when you quit</div><div class="r"><div><b>Chrome</b><span class="n">—</span></div><div><b>Edge</b><span class="n">—</span></div><div><b>Safari</b><span class="n">—</span></div><div><b>Firefox</b><span class="n">—</span></div><div><b>Brave</b><span class="n">—</span></div></div></div>
+    <div class="cmp-card"><div class="q"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>No ads or crypto business</div><div class="r"><div><b>Chrome</b><span class="n">—</span></div><div><b>Edge</b><span class="n">—</span></div><div><b>Safari</b><span class="pt">Partial</span></div><div><b>Firefox</b><span class="pt">Partial</span></div><div><b>Brave</b><span class="n">—</span></div></div></div>
   </div>
-</footer>
-
-
-  
-  
-    
-  <script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
-
-
-  
-    
-  <script src="/assets/js/popper.min.js"></script>
-
-
-  
-    
-  <script src="/assets/js/bootstrap.min.js"></script>
-
-
-  
-
-
-
-  
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    
-      <script src="/assets/js/beautifuljekyll.js"></script>
-    
-  
-
-
-
-
-
-
-
-
-
+  <div class="legend"><span>✓ On by default</span><span>Partial  Limited or opt-in</span><span>— Not included</span></div>
+</div></section>
+<section class="rule-soft"><div class="wrap sec">
+  <h2 class="h2" style="font-size:clamp(36px,5.6vw,72px);line-height:1;margin-bottom:56px">Everything Chrome does.<br><em>Nothing it collects.</em></h2>
+  <div class="feat-grid">
+    <div><h3>No tracking. No spying.</h3><p class="muted">Visiting the average website without Epic results in 15 tracking attempts. Larger websites can have twice as many trackers as well as try to fingerprint your device.</p></div>
+    <div><h3>Built on Chromium. Without Google.</h3><p class="muted">Built on Chromium like Chrome and Edge for exceptional security and speed, with Google's tracking and data collection removed. Every tab is a separate process for maximum data isolation.</p></div>
+    <div><h3>Customize Epic with Chrome extensions.</h3><p class="muted">Make Epic your Epic with themes and extensions. Almost all of the 150,000+ Chrome WebStore extensions work in Epic.</p></div>
+    <div><h3>Spy on the spies.</h3><p class="muted">Via Epic's new tab page, see the companies and organizations tracking you in your other browsers.</p></div>
+    <div><h3>Cookie and fingerprinting protection.</h3><p class="muted">Epic blocks third-party cookie tracking by default and includes granular protections against a plethora of fingerprinting techniques that can track and profile you across all your devices.</p></div>
+    <div><h3>No profiling.</h3><p class="muted">Protect your browsing history. No profiling. No filter bubbles.</p></div>
+    <div><h3>No ads. No data abuse.</h3><p class="muted">Epic has a custom uBlock-based ad blocker which includes additional filter lists for maximum protection.</p></div>
+    <div><h3>Unblock content.</h3><p class="muted">Epic for desktop bypasses many paywalls. Install a free proxy / VPN extension to unblock websites wherever you are. Access an uncensored internet.</p></div>
+    <div><h3>One of 3 trusted privacy software companies.</h3><p class="muted">Only a few companies have taken a substantial loss of revenue rather than compromise their users' privacy and we're one of them.</p></div>
+  </div>
+</div></section>
+<section style="background:var(--bg2)"><div class="wrap sec">
+  <div class="grid g2" style="align-items:end;margin-bottom:48px;gap:24px 72px">
+    <h2 class="h2-lg">Ten Epic <em class="o">firsts.</em></h2>
+    <p class="muted" style="font-size:18px">Most of what other browsers now call privacy features, Epic shipped first.</p>
+  </div>
+  <div class="firsts">
+    <div><span class="n">01</span><div><div class="t">The first privacy-focused Chromium-based browser.</div></div></div>
+    <div><span class="n">02</span><div><div class="t">The first highly secure and highly private browser.</div><div class="s">TOR is highly private but many nodes are run by malicious hosts.</div></div></div>
+    <div><span class="n">03</span><div><div class="t">A 10 year track record of transparency, security and privacy.</div></div></div>
+    <div><span class="n">04</span><div><div class="t">The first browser to include in-built tracking protection.</div></div></div>
+    <div><span class="n">05</span><div><div class="t">The first browser to include new tab page-based privacy data.</div></div></div>
+    <div><span class="n">06</span><div><div class="t">The first Chromium-based browser to include an encrypted data preference by default.</div><div class="s">HTTPS Everywhere-type protection.</div></div></div>
+    <div><span class="n">07</span><div><div class="t">The first Chromium-based browser to include fingerprinting protection.</div></div></div>
+    <div><span class="n">08</span><div><div class="t">The first Chromium-based browser to include a built-in VPN / encrypted proxy with country selector.</div><div class="s">Now supported by third parties.</div></div></div>
+    <div><span class="n">09</span><div><div class="t">The first Chromium-based browser to offer an optional always-on private browsing mode.</div></div></div>
+    <div><span class="n">10</span><div><div class="t">The first mobile browser with an audio queue that can read a set of webpages to you.</div></div></div>
+  </div>
+</div></section>
+<section class="close"><div class="wrap">
+  <h2>You're the user.<br><em>Not the product.</em></h2>
+  <div class="btns"><a class="btn" href="thank-you.html">Download Epic, free →</a><a class="btn-2 btn-light" href="donate.html">Donate</a></div>
+</div></section><footer class="foot"><div class="wrap">
+  <a href="tou.html">Terms of use</a><a href="privacy-policy.html">Privacy policy</a><a href="custom-browser.html">Custom browser</a><a href="/email">Email list</a><a href="contact-us.html">Contact</a>
+  <span class="sp"></span><span>© 2026 <a href="https://hiddenreflex.com">Hidden Reflex</a></span>
+</div></footer>
+<script src="js/epic.js" defer></script>
 </body>
 </html>
