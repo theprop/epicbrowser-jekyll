@@ -6,7 +6,8 @@ Files
   index.html, key-features.html, faq.html, about-us.html, contact-us.html,
   donate.html, custom-browser.html, thank-you.html,
   tou.html, privacy-policy.html, androidfeatures.html
-  spread_epic/index.html, mac_keychain/index.html, privacy/intro/index.html  (folder-style URLs)
+  spread_epic/index.html, mac_keychain/index.html, privacy/intro/index.html, email/index.html  (folder-style URLs)
+  privacy/intro.html and email.html are duplicates so both URL forms work; edit both when updating.
   css/fonts.css   @font-face rules (self-hosted fonts)
   css/epic.css    all site styles
   js/epic.js      download links + OS detection + small interactions (no dependencies)
