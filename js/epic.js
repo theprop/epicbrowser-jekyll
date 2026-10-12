@@ -5,8 +5,8 @@
   var DOWNLOADS = {
     windows:  { label:'Windows', primary:{name:'Installer (.exe)', url:'https://cdn.epicbrowser.com/winsetup/EpicSetup.exe'},
                 alternates:[{name:'Installer (.zip)', url:'https://cdn.epicbrowser.com/winsetup/EpicSetup.zip'},{name:"Direct (offline, won't update)", url:'https://cdn.epicbrowser.com/win138/mini_installer.exe'}] },
-    macArm:   { label:'Mac, Apple silicon (M1, M2, M3…)', primary:{name:'Apple silicon (.dmg)', url:'https://cdn.epicbrowser.com/v150/Epic_150.0.7871.24_arm.dmg'}, alternates:[{name:'Apple silicon (.zip)', url:'https://cdn.epicbrowser.com/v150/Epic_arm.zip'}] },
-    macIntel: { label:'Mac, Intel (older Macs)', primary:{name:'Intel (.dmg)', url:'https://cdn.epicbrowser.com/v150/Epic_150.0.7871.24_intel.dmg'}, alternates:[{name:'Intel (.zip)', url:'https://cdn.epicbrowser.com/v150/Epic_intel.zip'}] },
+    macArm:   { label:'Mac, Apple silicon (M1, M2, M3…)', primary:{name:'Apple silicon (.dmg)', url:'https://cdn.epicbrowser.com/v152arm/Epic_v152_arm.dmg'}, alternates:[{name:'Apple silicon (.zip)', url:'https://cdn.epicbrowser.com/v152arm/Epic_arm.zip'}] },
+    macIntel: { label:'Mac, Intel (older Macs)', primary:{name:'Intel (.dmg)', url:'https://cdn.epicbrowser.com/v153/Epic_v152_intel.dmg'}, alternates:[{name:'Intel (.zip)', url:'https://cdn.epicbrowser.com/v153/Epic_Intel.zip'}] },
     ios:      { label:'iPhone and iPad', primary:{name:'App Store', url:'https://apps.apple.com/us/app/epic-privacy-browser-w-vpn/id1502032811?mt=8'}, alternates:[] },
     android:  { label:'Android', primary:{name:'Google Play', url:'https://play.google.com/store/apps/details?id=com.epic.browser'}, alternates:[] }
   };
