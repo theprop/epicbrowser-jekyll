@@ -28,3 +28,6 @@ Pretty URLs (GitHub Pages)
   them without the extension (/faq, /donate), so existing links keep working.
   spread_epic/, mac_keychain/ and privacy/intro/ are folders with an index.html,
   so their trailing-slash URLs work as before.
+
+Next Epic Update Fixes 
+ seen in mac arm build.  on open or first run, top message use epic as pdf viewer, need to replace chromium logo with epic.  remove epic web store in drop-down menu under extensions, just call it extension webstore.  
