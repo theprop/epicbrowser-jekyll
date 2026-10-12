@@ -30,4 +30,6 @@ Pretty URLs (GitHub Pages)
   so their trailing-slash URLs work as before.
 
 Next Epic Update Fixes 
- seen in mac arm build.  on open or first run, top message use epic as pdf viewer, need to replace chromium logo with epic.  remove epic web store in drop-down menu under extensions, just call it extension webstore.  
+ seen in mac arm build.  on open or first run, top message use epic as pdf viewer, need to replace chromium logo with epic.  
+ remove epic web store in drop-down menu under extensions, just call it extension webstore.  
+ mac arm dmg, remove light blue background, keep all white. 
