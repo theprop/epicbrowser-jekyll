@@ -4,7 +4,7 @@
   var EPIC_VERSION = '150.0.7871.24';
   var DOWNLOADS = {
     windows:  { label:'Windows', primary:{name:'Installer (.exe)', url:'https://cdn.epicbrowser.com/winsetup/EpicSetup.exe'},
-                alternates:[{name:'Installer (.zip)', url:'https://cdn.epicbrowser.com/winsetup/EpicSetup.zip'},{name:"Direct (offline, won't update)", url:'https://cdn.epicbrowser.com/win138/mini_installer.exe'}] },
+                alternates:[{name:'Installer (.zip)', url:'https://cdn.epicbrowser.com/winsetup/EpicSetup.zip'},{name:"Direct (offline, won't update)", url:'https://cdn.epicbrowser.com/v153/mini_installer.exe'}] },
     macArm:   { label:'Mac, Apple silicon (M1, M2, M3…)', primary:{name:'Apple silicon (.dmg)', url:'https://cdn.epicbrowser.com/v152arm/Epic_v152_arm.dmg'}, alternates:[{name:'Apple silicon (.zip)', url:'https://cdn.epicbrowser.com/v152arm/Epic_arm.zip'}] },
     macIntel: { label:'Mac, Intel (older Macs)', primary:{name:'Intel (.dmg)', url:'https://cdn.epicbrowser.com/v153/Epic_v152_Intel.dmg'}, alternates:[{name:'Intel (.zip)', url:'https://cdn.epicbrowser.com/v153/Epic_Intel.zip'}] },
     ios:      { label:'iPhone and iPad', primary:{name:'App Store', url:'https://apps.apple.com/us/app/epic-privacy-browser-w-vpn/id1502032811?mt=8'}, alternates:[] },
